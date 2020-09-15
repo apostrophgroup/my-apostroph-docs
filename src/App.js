@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react';
-import { BrowserRouter as Router,  Switch,  Route,  Link } from 'react-router-dom';
+import { BrowserRouter,  Switch,  Route,  Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap'
 
 import AboutPage from './pages/about';
@@ -13,15 +13,15 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/docs">Docs</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/docs">Docs</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -41,7 +41,7 @@ function App() {
         <Route path="/about" component={ AboutPage }/>
         <Route path="/docs" component={ DocsPage }/>
       </Container>
-  </Router>
+  </BrowserRouter>
 
     /*<div className="App">
       <header className="App-header">

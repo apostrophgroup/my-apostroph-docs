@@ -14,6 +14,13 @@ $navbar-bg: rgb(255, 255, 255);
   z-index: 100;
 }
 
+.language-selector {
+  .dropdown-menu {
+    right: 0;
+    left: unset;
+  }
+}
+
 .nav-vertical {
   background: $navbar-bg !important;
 }

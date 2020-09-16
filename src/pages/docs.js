@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
-import { Row, Col, Nav } from 'react-bootstrap'
+import { Row, Col, Nav, Container } from 'react-bootstrap'
 
 
 class DocsPage extends Component {
@@ -40,8 +40,11 @@ class DocsPage extends Component {
             <Nav.Link eventKey="link-2">Link</Nav.Link>
           </Nav>
         </Col>
-        <Col xs={9}>{ loading ? null : <ReactMarkdown source={data} /> }</Col>
-        <Col>right</Col>
+        <Col xs={10}>
+          <Container>
+            { loading ? null : <ReactMarkdown source={data} /> }
+          </Container>
+        </Col>
       </Row>
     );
   }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
+import { Row, Col, Nav } from 'react-bootstrap'
+
 
 class DocsPage extends Component {
   constructor(props) {
@@ -20,10 +22,6 @@ class DocsPage extends Component {
   }
 
   render() {
-
-    const input = '# This is a header\n\nAnd this is a paragraph'
-    const readmePath = require("../docs/sample.md");
-
     //let response = await fetch(readmePath);
     //let text = await response.text();
 
@@ -33,8 +31,18 @@ class DocsPage extends Component {
 
     console.log(loading);
 
-    return (<div>
-      { loading ? null : <ReactMarkdown source={data} /> } </div>
+    return (
+      <Row>
+        <Col className="nav-vertical">
+          <Nav defaultActiveKey="/home" className="flex-column">
+            <Nav.Link href="/home">Active</Nav.Link>
+            <Nav.Link eventKey="link-1">Link</Nav.Link>
+            <Nav.Link eventKey="link-2">Link</Nav.Link>
+          </Nav>
+        </Col>
+        <Col xs={9}>{ loading ? null : <ReactMarkdown source={data} /> }</Col>
+        <Col>right</Col>
+      </Row>
     );
   }
 }

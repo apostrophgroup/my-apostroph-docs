@@ -27,6 +27,7 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
+          <Nav.Link as={Link} to="/home">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">myApostroph</Nav.Link>
             <Nav.Link as={Link} to="/docs">myFreelance</Nav.Link>
           </Nav>
@@ -37,7 +38,7 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Container>
+      <Container fluid>
         <Route path="/about" component={ AboutPage }/>
         <Route path="/docs" component={ DocsPage }/>
       </Container>

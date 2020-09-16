@@ -1,5 +1,32 @@
 // Override default variables before the import
-$body-bg: #fff;
+$body-bg: rgb(248, 249, 251);
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
+$apostroph-color: rgb(0, 80, 160);
+
+$navbar-bg: rgb(255, 255, 255);
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-vertical {
+  background: $navbar-bg !important;
+}
+
+.bg-light {
+  background: $navbar-bg !important;
+  border-bottom: 1px solid $apostroph-color;
+}
+
+.navbar-light .navbar-brand {
+  color: $apostroph-color;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #646464;
+}

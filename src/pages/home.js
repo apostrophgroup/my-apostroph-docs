@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <BrowserRouter>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/home">
           <img
             alt=""
             src={logo}
@@ -49,10 +49,11 @@ const HomePage = () => {
         </Navbar.Collapse>
       </Navbar>
 
-      <Container fluid>
+      <div>
+      <Route path="/home" component={ AboutPage }/>
         <Route path="/about" component={ AboutPage }/>
         <Route path="/docs" component={ DocsPage }/>
-      </Container>
+      </div>
     </BrowserRouter>
   );
 }

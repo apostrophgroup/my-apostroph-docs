@@ -21,6 +21,14 @@ $navbar-bg: rgb(255, 255, 255);
   }
 }
 
+.home-jumbotron {
+  background-color: $apostroph-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $navbar-bg;
+}
+
 .nav-vertical {
   background: $navbar-bg !important;
 }

@@ -11,7 +11,7 @@ class DocsPage extends Component {
   }
 
   componentDidMount() {
-    fetch(require("../docs/sample.md")).then(response => {
+    fetch(require("../docs/myFreelance/fr.md")).then(response => {
       response.text().then(content => {
           //ReactDOM.render(, document.getElementById('tototo'))
           this.setState({ loading: false, data: content });

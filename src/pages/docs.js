@@ -3,76 +3,65 @@ import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 import { Row, Col, Nav, Container } from 'react-bootstrap'
 
-import myApostroph from './../docs/myApostroph/fr.md';
-import myFreelance from './../docs/myFreelance/fr.md';
+//import myApostroph from './../docs/myApostroph/fr.md';
+//import myFreelance from './../docs/myFreelance/fr.md';
 
+const AVAILABLE_DOCS = [
+  {
+    id: 'myApostroph',
+    data: require('./../docs/myApostroph/fr.md')
+  },
+  {
+    id: 'myFreelance',
+    data: require('./../docs/myFreelance/fr.md')
+  }
+];
 
 class DocsPage extends Component {
   constructor(props) {
     super(props);
-    
-    this.state = {loading: true};
+
+    this.state = { loading: true, data: "" };
   }
 
-  /*componentDidMount() {
-    console.log(this.doc);
-
-    let toto;
-
-    switch (this.doc) {
-      case 'myApostroph':
-      toto = myApostroph;
-      break;
-
-      case 'myFreelance':
-      toto = myFreelance;
-      break;
+  componentDidMount() {
+    if (this.props.match.params) {
+      if (this.props.match.params.docId) {
+        this.fetchDoc(this.props.match.params.docId);
+      }
     }
+  }
 
-    fetch(toto).then(response => {
-      response.text().then(content => {
-          //ReactDOM.render(, document.getElementById('tototo'))
-          this.setState({ loading: false, data: content });
-      });
-    });
-  }*/
-
-  static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.match.params.doc !== prevState.doc) {
-      console.log('hey');
+  componentDidUpdate(prevProps) {
+    if (this.props.match.params) {
+      if (this.props.match.params.docId) {
+        if (this.props.match.params.docId !== prevProps.match.params.docId) {
+          this.fetchDoc(this.props.match.params.docId);
+        }
+      }
     }
-    console.log(nextProps);
-
-    return null;
   }
 
   render() {
-    //let response = await fetch(readmePath);
-    //let text = await response.text();
-
-    //console.log(text);
-
-    //const { loading, data } = this.state;
-
-    const loading = true;
-    const data = "";
+    const { loading, data } = this.state;
 
     return (
-      <Row>
-        <Col className="nav-vertical">
-          <Nav defaultActiveKey="/home" className="flex-column">
-            <Nav.Link href="/home">Active</Nav.Link>
-            <Nav.Link eventKey="link-1">Link</Nav.Link>
-            <Nav.Link eventKey="link-2">Link</Nav.Link>
-          </Nav>
-        </Col>
-        <Col xs={10}>
-          <Container>
-            { loading ? null : <ReactMarkdown source={data} /> }
-          </Container>
-        </Col>
-      </Row>
+      <Container>
+        { loading ? null : <ReactMarkdown source={data} /> }
+      </Container>
     );
+  }
+
+  fetchDoc(docId) {
+    const doc = AVAILABLE_DOCS.find(e => e.id === docId);
+
+    if (doc) {
+        fetch(doc.data).then(response => {
+          response.text().then(content => {
+              this.setState({ loading: false, data: content });
+          });
+        });
+    }
   }
 }
 

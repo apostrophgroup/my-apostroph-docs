@@ -1,4 +1,4 @@
-## Mode d'emploi myAPOSTROPH
+# Mode d'emploi myAPOSTROPH
 
 ### Notre portail en ligne.
 Notre portail en ligne sécurisé est à votre disposition via le lien suivant dans votre navigateur:
@@ -17,8 +17,9 @@ La surface utilisateur multilingue est à votre disposition dans les langues sui
 
 ## 3. User / Superuser
 Sur la plateforme myAPOSTROPH, vous êtes soit un
-1.  **User**: vous voyez tous les mandats que vous avez saisis, ou un
-2.  **Superuser**: vous voyez tous les mandats des utilisateurs qui
+
+1. **User**: vous voyez tous les mandats que vous avez saisis, ou un
+2. **Superuser**: vous voyez tous les mandats des utilisateurs qui
 
 dépendent de vous. Les mandats signalés comme confidentiels (champ séparé dans l'écran de saisie de mandats) ne sont visibles que du donneur d'ordre concerné. Le Superuser voit uniquement qu'un mandat a été saisi, mais sans en voir les détails. Nous offrons ainsi une sécurité supplémentaire pour vos mandats confidentiels. Si vous souhaitez disposer d'un accès de Superuser, nous l'installerons volontiers.
 

@@ -50,9 +50,14 @@ const HomePage = () => {
       </Navbar>
 
       <div>
-      <Route path="/home" component={ AboutPage }/>
+      <Switch>
+        <Route path="/home" component={ AboutPage }/>
         <Route path="/about" component={ AboutPage }/>
         <Route exact path="/docs/:docId" component={ DocsPage }/>
+        <Route component={ AboutPage }/>
+      </Switch>
+
+
       </div>
     </BrowserRouter>
   );

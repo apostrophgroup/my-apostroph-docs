@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 import { Row, Col, Nav, Container } from 'react-bootstrap'
 
-//import myApostroph from './../docs/myApostroph/fr.md';
-//import myFreelance from './../docs/myFreelance/fr.md';
+//import docsA from './../docs/myApostroph/fr.md!raw';
+import docsF from './../docs/myFreelance/fr.js';
 
 const AVAILABLE_DOCS = [
   {
@@ -13,7 +13,7 @@ const AVAILABLE_DOCS = [
   },
   {
     id: 'myFreelance',
-    data: require('./../docs/myFreelance/fr.md')
+    data: docsF
   }
 ];
 
@@ -58,6 +58,7 @@ class DocsPage extends Component {
     if (doc) {
         fetch(doc.data).then(response => {
           response.text().then(content => {
+            console.log(content);
               this.setState({ loading: false, data: content });
           });
         });

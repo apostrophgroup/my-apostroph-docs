@@ -1,3 +1,7 @@
+import myImageUrl from './assets/sign-in.png'
+
+export default `
+
 # Utilisation myApostroph
 ## Le portail Web en ligne
 Le portail Web de transmission de mandats myAPOSTROPH est à votre disposition en tant que client enregistré. Vous pouvez accéder comme suit à myAPOSTROPH – en mode sécurisé – à partir de votre navigateur: https://portal.apostroph.ch.
@@ -20,7 +24,7 @@ Si vous n’avez pas encore de compte myAPOSTROPH, vous pouvez vous enregistrer 
 
 ![alt text][sign-in]
 
-[sign-in]: ./assets/sign-in.png "Enregistrez-vous"
+[sign-in]: ${myImageUrl} "Enregistrez-vous"
 
 À la page suivante, veuillez compléter correctement l’ensemble des quatre champs et cliquer sur **Poursuivre**.
 
@@ -28,4 +32,4 @@ Si vous n’avez pas encore de compte myAPOSTROPH, vous pouvez vous enregistrer 
 
 [sign-in-details]: ./assets/sign-in-details.png "Enregistrez-vous"
 
-Vous receverez ensuite le message suivant.
+Vous receverez ensuite le message suivant.`.trim();

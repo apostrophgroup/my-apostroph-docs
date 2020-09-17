@@ -13,7 +13,7 @@ const HomePage = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <BrowserRouter basename='/my-apostroph-docs'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand as={Link} to="/home">
           <img

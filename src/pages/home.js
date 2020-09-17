@@ -12,6 +12,9 @@ import logo from './../assets/svg/logo.svg';
 const HomePage = () => {
   const { t, i18n } = useTranslation();
 
+  const doc = "myApostroph";
+  const docFree = "myFreelance";
+
   return (
     <BrowserRouter>
       <Navbar bg="light" expand="lg">
@@ -29,8 +32,8 @@ const HomePage = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
           <Nav.Link as={Link} to="/home">{t('Home.Nav.Home')}</Nav.Link>
-            <Nav.Link as={Link} to="/about">{t('Home.Nav.MyApostroph')}</Nav.Link>
-            <Nav.Link as={Link} to="/docs">{t('Home.Nav.MyFreelance')}</Nav.Link>
+            <Nav.Link as={Link} to={`/docs/${doc}`}>{t('Home.Nav.MyApostroph')}</Nav.Link>
+            <Nav.Link as={Link} to={`/docs/${docFree}`}>{t('Home.Nav.MyFreelance')}</Nav.Link>
           </Nav>
           <NavDropdown title={t('Home.Nav.Language')} className="language-selector">
             <NavDropdown.Item
@@ -52,7 +55,7 @@ const HomePage = () => {
       <div>
       <Route path="/home" component={ AboutPage }/>
         <Route path="/about" component={ AboutPage }/>
-        <Route path="/docs" component={ DocsPage }/>
+        <Route exact path="/docs/:doc" component={ DocsPage }/>
       </div>
     </BrowserRouter>
   );

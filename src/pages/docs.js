@@ -3,22 +3,47 @@ import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 import { Row, Col, Nav, Container } from 'react-bootstrap'
 
+import myApostroph from './../docs/myApostroph/fr.md';
+import myFreelance from './../docs/myFreelance/fr.md';
+
 
 class DocsPage extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {loading: true, data: ""};
-    this.content = "";
+    
+    this.state = {loading: true};
   }
 
-  componentDidMount() {
-    fetch(require("../docs/myFreelance/fr.md")).then(response => {
+  /*componentDidMount() {
+    console.log(this.doc);
+
+    let toto;
+
+    switch (this.doc) {
+      case 'myApostroph':
+      toto = myApostroph;
+      break;
+
+      case 'myFreelance':
+      toto = myFreelance;
+      break;
+    }
+
+    fetch(toto).then(response => {
       response.text().then(content => {
           //ReactDOM.render(, document.getElementById('tototo'))
           this.setState({ loading: false, data: content });
       });
     });
+  }*/
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (nextProps.match.params.doc !== prevState.doc) {
+      console.log('hey');
+    }
+    console.log(nextProps);
+
+    return null;
   }
 
   render() {
@@ -27,9 +52,10 @@ class DocsPage extends Component {
 
     //console.log(text);
 
-    const { loading, data } = this.state;
+    //const { loading, data } = this.state;
 
-    console.log(loading);
+    const loading = true;
+    const data = "";
 
     return (
       <Row>

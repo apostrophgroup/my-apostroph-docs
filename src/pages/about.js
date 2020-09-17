@@ -7,9 +7,9 @@ import logoLight from './../assets/svg/logo-light.svg';
 class AboutPage extends Component {
   render() {
     return (
-      <div>
+      <Container fluid>
         <Row>
-          <Col>
+          <Col style={{ paddingRight: 0, paddingLeft: 0 }}>
             <Jumbotron className="home-jumbotron" fluid style={{backgroundImage : `url(${logoLight})`}}>
               <Container>
                 <h1>Apostroph docs</h1>
@@ -51,7 +51,7 @@ class AboutPage extends Component {
         </Col>
       </Row>
 </Container>
-      </div>
+      </Container>
     );
   }
 }

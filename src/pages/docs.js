@@ -12,7 +12,7 @@ const AVAILABLE_DOCS = [
   {
     id: 'myApostroph',
     data: require('./../docs/myApostroph/fr.md'),
-    image : image
+    image : require('./../docs/myFreelance/assets/sign-in.png')
   },
   {
     id: 'myFreelance',

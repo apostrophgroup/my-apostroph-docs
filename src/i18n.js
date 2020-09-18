@@ -1,6 +1,6 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 //https://github.com/i18next/react-i18next/issues/1082
 import translationEN from './assets/i18n/en.json';
@@ -24,11 +24,15 @@ const resources = {
 };
 
 i18n
+  // detect user language
+  // learn more: https://github.com/i18next/i18next-browser-languageDetector
+  .use(LanguageDetector)
+  // init i18next
+  // for all options read: https://www.i18next.com/overview/configuration-options
   .use(initReactI18next)
   .init({
-    lng: 'en',
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     resources,
     keySeparator: false,
     interpolation: {

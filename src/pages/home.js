@@ -1,6 +1,6 @@
-import React, { Component, Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter,  Switch,  Route,  Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 
 import { useTranslation } from 'react-i18next'
 
@@ -28,9 +28,9 @@ const HomePage = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/home">{t('Home.Nav.Home')}</Nav.Link>
-          <Nav.Link as={Link} to={`/docs/myApostroph`}>{t('Home.Nav.MyApostroph')}</Nav.Link>
-          <Nav.Link as={Link} to={`/docs/myFreelance`}>{t('Home.Nav.MyFreelance')}</Nav.Link>
+            <Nav.Link as={Link} to="/home">{t('Home.Nav.Home')}</Nav.Link>
+            <Nav.Link as={Link} to={`/docs/myApostroph`}>{t('Home.Nav.MyApostroph')}</Nav.Link>
+            <Nav.Link as={Link} to={`/docs/myFreelance`}>{t('Home.Nav.MyFreelance')}</Nav.Link>
           </Nav>
           <NavDropdown title={t('Home.Nav.Language')} className="language-selector">
             <NavDropdown.Item
@@ -48,16 +48,13 @@ const HomePage = () => {
           </NavDropdown>
         </Navbar.Collapse>
       </Navbar>
-
       <div>
-      <Switch>
-        <Route path="/home" component={ AboutPage }/>
-        <Route path="/about" component={ AboutPage }/>
-        <Route exact path="/docs/:docId" component={ DocsPage }/>
-        <Route component={ AboutPage }/>
-      </Switch>
-
-
+        <Switch>
+          <Route path="/home" component={ AboutPage }/>
+          <Route path="/about" component={ AboutPage }/>
+          <Route exact path="/docs/:docId" component={ DocsPage }/>
+          <Route component={ AboutPage }/>
+        </Switch>
       </div>
     </BrowserRouter>
   );

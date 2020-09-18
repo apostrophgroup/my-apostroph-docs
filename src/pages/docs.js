@@ -1,70 +1,63 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next'
+//import i18n from 'i18next'
+
 import ReactMarkdown from 'react-markdown';
-import { Row, Col, Nav, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
-const AVAILABLE_DOCS = [
-  {
-    id: 'myApostroph',
-    data: '/docs/myApostroph/fr.md',
-  },
-  {
-    id: 'myFreelance',
-    data: '/docs/myFreelance/fr.md'
-  }
-];
+const DocsPage = (props) => {
+  const { t, i18n } = useTranslation();
 
-class DocsPage extends Component {
-  constructor(props) {
-    super(props);
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
+  const [docId, setDocId] = useState(props.match.params.docId);
+  const [language, setLanguage] = useState(i18n.language);
 
-    this.state = { loading: true, data: "", image: AVAILABLE_DOCS[0].image };
-  }
-
-  componentDidMount() {
-    if (this.props.match.params) {
-      if (this.props.match.params.docId) {
-        this.fetchDoc(this.props.match.params.docId);
+  useEffect(() => {
+    if (docId !== props.match.params.docId) {
+      setDocId(props.match.params.docId)
+    } else {
+      if (i18n.language !== language) {
+        setLanguage(i18n.language);
       }
     }
+  });
+
+  useEffect(() => {
+    fetchDoc(docId, language);
+  }, [docId, language]);
+
+
+  function fetchDoc(docId, language) {
+    console.log('fetch ' + docId + language);
+    fetch(process.env.PUBLIC_URL + '/docs/' + docId + '/' + language + '.md').then(response => {
+      console.log(response.status);
+      response.text().then(content => {
+        setLoading(false);
+        setData(content);
+        //this.setState({ loading: false, docId: docId, data: content });
+      }).catch((error) => {
+        setLoading(false);
+        setData('#Error loading');
+        //this.setState({ loading: false, docId: docId,  data: "# Error" });
+      });
+    }).catch((error) => {
+      setLoading(false);
+      setData('#Error loading');
+      console.log(error);
+      //this.setState({ loading: false, docId: docId,  data: "# Error" });
+    });
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.match.params) {
-      if (this.props.match.params.docId) {
-        if (this.props.match.params.docId !== prevProps.match.params.docId) {
-          this.fetchDoc(this.props.match.params.docId);
-        }
-      }
-    }
+  function correctImageUri(docId, originalUri) {
+    return process.env.PUBLIC_URL + '/docs/' + docId + originalUri;
   }
 
-  render() {
-    const { loading, data } = this.state;
-
-    return (
-      <Container>
-        { loading ? null : <ReactMarkdown source={data} transformImageUri={this.correctImageUri} /> }
-      </Container>
-    );
-  }
-
-  fetchDoc(docId) {
-    const doc = AVAILABLE_DOCS.find(e => e.id === docId);
-
-    if (doc) {
-        fetch(process.env.PUBLIC_URL + doc.data).then(response => {
-          response.text().then(content => {
-            console.log(content);
-              this.setState({ loading: false, data: content });
-          });
-        });
-    }
-  }
-
-  correctImageUri(originalUri){
-    return process.env.PUBLIC_URL + '/docs/myFreelance' + originalUri;
-  }
+  return (
+    <Container>
+      { loading ? null : <ReactMarkdown source={data} transformImageUri={(e) => correctImageUri(docId, e)} /> }
+    </Container>
+  );
 }
 
 export default DocsPage;

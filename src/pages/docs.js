@@ -4,7 +4,9 @@ import ReactMarkdown from 'react-markdown';
 import { Row, Col, Nav, Container } from 'react-bootstrap'
 
 //import docsA from './../docs/myApostroph/fr.md!raw';
-import docsF from './../docs/myFreelance/fr.js';
+//import docsF from './../docs/myFreelance/fr.js';
+
+import image from './../docs/myFreelance/assets/sign-in.png';
 
 const AVAILABLE_DOCS = [
   {
@@ -13,7 +15,7 @@ const AVAILABLE_DOCS = [
   },
   {
     id: 'myFreelance',
-    data: docsF
+    data: require('./../docs/myFreelance/fr.md')
   }
 ];
 
@@ -47,7 +49,7 @@ class DocsPage extends Component {
 
     return (
       <Container>
-        { loading ? null : <ReactMarkdown source={data} /> }
+        { loading ? null : <ReactMarkdown source={data} transformImageUri={this.correctImageUri} /> }
       </Container>
     );
   }
@@ -63,6 +65,10 @@ class DocsPage extends Component {
           });
         });
     }
+  }
+
+  correctImageUri(originalUri){
+    return 'https://raw.githubusercontent.com/apostrophgroup/my-apostroph-docs/master/src/docs/myFreelance' + originalUri;
   }
 }
 

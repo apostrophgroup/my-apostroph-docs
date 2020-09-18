@@ -11,7 +11,8 @@ import image from './../docs/myFreelance/assets/sign-in.png';
 const AVAILABLE_DOCS = [
   {
     id: 'myApostroph',
-    data: require('./../docs/myApostroph/fr.md')
+    data: require('./../docs/myApostroph/fr.md'),
+    image : image
   },
   {
     id: 'myFreelance',

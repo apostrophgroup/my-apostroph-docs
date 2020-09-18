@@ -24,7 +24,7 @@ class DocsPage extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { loading: true, data: "" };
+    this.state = { loading: true, data: "", image: AVAILABLE_DOCS[0].image };
   }
 
   componentDidMount() {

@@ -3,20 +3,14 @@ import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 import { Row, Col, Nav, Container } from 'react-bootstrap'
 
-//import docsA from './../docs/myApostroph/fr.md!raw';
-//import docsF from './../docs/myFreelance/fr.js';
-
-import image from './../docs/myFreelance/assets/sign-in.png';
-
 const AVAILABLE_DOCS = [
   {
     id: 'myApostroph',
-    data: require('./../docs/myApostroph/fr.md'),
-    image : require('./../docs/myFreelance/assets/sign-in.png')
+    data: '/docs/myApostroph/fr.md',
   },
   {
     id: 'myFreelance',
-    data: require('./../docs/myFreelance/fr.md')
+    data: '/docs/myFreelance/fr.md'
   }
 ];
 
@@ -59,7 +53,7 @@ class DocsPage extends Component {
     const doc = AVAILABLE_DOCS.find(e => e.id === docId);
 
     if (doc) {
-        fetch(doc.data).then(response => {
+        fetch(process.env.PUBLIC_URL + doc.data).then(response => {
           response.text().then(content => {
             console.log(content);
               this.setState({ loading: false, data: content });
@@ -69,7 +63,7 @@ class DocsPage extends Component {
   }
 
   correctImageUri(originalUri){
-    return 'https://raw.githubusercontent.com/apostrophgroup/my-apostroph-docs/master/src/docs/myFreelance' + originalUri;
+    return process.env.PUBLIC_URL + '/docs/myFreelance' + originalUri;
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Card, Button, Col, Row, Jumbotron } from 'react-bootstrap'
 
 import logoLight from './../assets/svg/logo-light.svg';
@@ -14,7 +15,7 @@ class AboutPage extends Component {
               <Container>
                 <h1>Apostroph docs</h1>
                 <p>
-                  The official documentation for Apostroph tools such as myApostroph and myFreelance.
+                  The official documentation for Apostroph tools
                 </p>
               </Container>
             </Jumbotron>
@@ -23,29 +24,28 @@ class AboutPage extends Component {
       <Container>
       <Row>
         <Col>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
+          <Card>
+            <Card.Body>
+              <Card.Title>myAPOSTROPH</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">Notre portail en ligne</Card.Subtitle>
+              <Card.Text>
+                Notre portail vous permet de gerer vos traductions en temps réels.
+                Commandez des traductions & demandez des offres, le tout en quelques clics!
+              </Card.Text>
+              <Card.Link as={Link} to={'/docs/myApostroph'}>Accedez à la documentation</Card.Link>
+            </Card.Body>
+          </Card>
         </Col>
-
         <Col>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
+        <Card>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>myFREELANCE</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Notre portail en ligne</Card.Subtitle>
             <Card.Text>
               Some quick example text to build on the card title and make up the bulk of
               the card's content.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Link as={Link} to={'/docs/myFreelance'}>Accedez à la documentation</Card.Link>
           </Card.Body>
         </Card>
         </Col>

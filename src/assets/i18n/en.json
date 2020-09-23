@@ -8,5 +8,12 @@
   "Home.Nav.Language.Two": "Français",
   "Home.Nav.Language.Two.Value": "fr",
   "Home.Nav.Language.Three": "Italiano",
-  "Home.Nav.Language.Three.Value": "it"
+  "Home.Nav.Language.Three.Value": "it",
+
+  "Error.Title": "Oops, something went wrong...",
+  "Error.Description": "The resource you are looking for does not exists. Check out the informations below for more details.",
+  "Error.Code": "ERR_{{code}}",
+  "Error.1000.Title": "Documentation not found",
+  "Error.1000.Description": "The document <strong>{{valueOne}}</strong> does not exists.",
+  "Error.1000.Solution": "Please check that your link is valid or try to look for the documentation in another language."
 }

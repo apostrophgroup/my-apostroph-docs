@@ -5,11 +5,9 @@ import HomePage from './pages/home';
 
 const App = () => {
   return (
-    <div>
       <Suspense fallback={null}>
         <HomePage/>
       </Suspense>
-    </div>
   );
 }
 

@@ -29,22 +29,22 @@ const RootPage = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/">{t('Home.Nav.Home')}</Nav.Link>
-            <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Home.Nav.MyApostroph')}</Nav.Link>
-            <Nav.Link as={Link} to={'/docs/myFreelance'}>{t('Home.Nav.MyFreelance')}</Nav.Link>
+            <Nav.Link as={Link} to="/">{t('Root.Nav.Home')}</Nav.Link>
+            <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Root.Nav.MyApostroph')}</Nav.Link>
+            <Nav.Link as={Link} to={'/docs/myFreelance'}>{t('Root.Nav.MyFreelance')}</Nav.Link>
           </Nav>
-          <NavDropdown title={t('Home.Nav.Language')} className="language-selector">
+          <NavDropdown title={t('Root.Nav.Language')} className="language-selector">
             <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Home.Nav.Language.One.Value'))}>
-              {t('Home.Nav.Language.One')}
+              onClick={() => i18n.changeLanguage(t('Root.Nav.Language.One.Value'))}>
+              {t('Root.Nav.Language.One')}
             </NavDropdown.Item>
             <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Home.Nav.Language.Two.Value'))}>
-              {t('Home.Nav.Language.Two')}
+              onClick={() => i18n.changeLanguage(t('Root.Nav.Language.Two.Value'))}>
+              {t('Root.Nav.Language.Two')}
             </NavDropdown.Item>
             <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Home.Nav.Language.Three.Value'))}>
-              {t('Home.Nav.Language.Three')}
+              onClick={() => i18n.changeLanguage(t('Root.Nav.Language.Three.Value'))}>
+              {t('Root.Nav.Language.Three')}
             </NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>

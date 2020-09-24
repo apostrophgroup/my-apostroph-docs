@@ -2,58 +2,63 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Card, Col, Row, Jumbotron } from 'react-bootstrap'
 
+import { useTranslation } from 'react-i18next'
+
 import logoLight from './../assets/svg/logo-light.svg';
 
+const HomePage = () => {
+  const { t, i18n } = useTranslation();
 
-class HomePage extends Component {
-  render() {
-    return (
-      <Container fluid>
-        <Row>
-          <Col style={{ paddingRight: 0, paddingLeft: 0 }}>
-            <Jumbotron className="home-jumbotron" fluid style={{backgroundImage : `url(${logoLight})`}}>
-              <Container>
-                <h1>Apostroph docs</h1>
-                <p>
-                  The official documentation for Apostroph tools
-                </p>
-              </Container>
-            </Jumbotron>
-          </Col>
-        </Row>
-      <Container>
+  return (
+    <Container fluid>
       <Row>
-        <Col>
-          <Card>
-            <Card.Body>
-              <Card.Title>myAPOSTROPH</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">Notre portail en ligne</Card.Subtitle>
-              <Card.Text>
-                Notre portail vous permet de gerer vos traductions en temps réels.
-                Commandez des traductions & demandez des offres, le tout en quelques clics!
-              </Card.Text>
-              <Card.Link as={Link} to={'/docs/myApostroph'}>Accedez à la documentation</Card.Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-        <Card>
-          <Card.Body>
-            <Card.Title>myFREELANCE</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">Notre portail en ligne</Card.Subtitle>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </Card.Text>
-            <Card.Link as={Link} to={'/docs/myFreelance'}>Accedez à la documentation</Card.Link>
-          </Card.Body>
-        </Card>
+        <Col style={{ paddingRight: 0, paddingLeft: 0 }}>
+          <Jumbotron className="home-jumbotron" fluid style={{backgroundImage : `url(${logoLight})`}}>
+            <Container>
+              <h1>{t('Home.Jumbo.Title')}</h1>
+              <p>{t('Home.Jumbo.Subtitle')}</p>
+            </Container>
+          </Jumbotron>
         </Col>
       </Row>
-</Container>
+      <Container>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Body>
+                <Card.Title>{t('Home.CardOne.Title')}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  {t('Home.CardOne.Subtitle')}
+                </Card.Subtitle>
+                <Card.Text>
+                  {t('Home.CardOne.Text')}
+                </Card.Text>
+                <Card.Link as={Link} to={'/docs/myApostroph'}>
+                  {t('Home.CardOne.Link')}
+                </Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Body>
+                <Card.Title>{t('Home.CardTwo.Title')}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  {t('Home.CardTwo.Subtitle')}
+                </Card.Subtitle>
+                <Card.Text>
+                  {t('Home.CardTwo.Text')}
+                </Card.Text>
+                <Card.Link as={Link} to={'/docs/myFreelance'}>
+                  {t('Home.CardTwo.Link')}
+                </Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
-    );
-  }
+    </Container>
+  );
 }
 
 export default HomePage;

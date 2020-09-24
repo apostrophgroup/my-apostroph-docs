@@ -6,7 +6,7 @@ import { BugFill } from 'react-bootstrap-icons';
 const ErrorPage = (props) => {
   const { t } = useTranslation();
 
-  const [errorCode] = useState(props.location.code ? props.location.code : 0);
+  const [errorCode] = useState(props.location.code ? props.location.code : 404);
   const [valueOne] = useState(props.location.valueOne ? props.location.valueOne : '');
   return (
     <Container>

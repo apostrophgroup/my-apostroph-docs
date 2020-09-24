@@ -1,12 +1,12 @@
 {
-  "Home.Nav.Home": "Home",
-  "Home.Nav.MyApostroph": "myAPOSTROPH",
-  "Home.Nav.MyFreelance": "myFREELANCE",
-  "Home.Nav.Language": "Lingua",
-  "Home.Nav.Language.One": "English",
-  "Home.Nav.Language.One.Value": "en",
-  "Home.Nav.Language.Two": "Deutsch",
-  "Home.Nav.Language.Two.Value": "de",
-  "Home.Nav.Language.Three": "Français",
-  "Home.Nav.Language.Three.Value": "fr"
+  "Root.Nav.Home": "Home",
+  "Root.Nav.MyApostroph": "myAPOSTROPH",
+  "Root.Nav.MyFreelance": "myFREELANCE",
+  "Root.Nav.Language": "Lingua",
+  "Root.Nav.Language.One": "English",
+  "Root.Nav.Language.One.Value": "en",
+  "Root.Nav.Language.Two": "Deutsch",
+  "Root.Nav.Language.Two.Value": "de",
+  "Root.Nav.Language.Three": "Français",
+  "Root.Nav.Language.Three.Value": "fr"
 }

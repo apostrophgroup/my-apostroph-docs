@@ -1,12 +1,36 @@
 {
-  "Home.Nav.Home": "Home",
-  "Home.Nav.MyApostroph": "myAPOSTROPH",
-  "Home.Nav.MyFreelance": "myFREELANCE",
-  "Home.Nav.Language": "Langue",
-  "Home.Nav.Language.One": "Italiano",
-  "Home.Nav.Language.One.Value": "it",
-  "Home.Nav.Language.Two": "English",
-  "Home.Nav.Language.Two.Value": "en",
-  "Home.Nav.Language.Three": "Deutsch",
-  "Home.Nav.Language.Three.Value": "de"
-}
+  "Root.Nav.Home": "Home",
+  "Root.Nav.MyApostroph": "myAPOSTROPH",
+  "Root.Nav.MyFreelance": "myFREELANCE",
+  "Root.Nav.Language": "Langue",
+  "Root.Nav.Language.One": "Italiano",
+  "Root.Nav.Language.One.Value": "it",
+  "Root.Nav.Language.Two": "English",
+  "Root.Nav.Language.Two.Value": "en",
+  "Root.Nav.Language.Three": "Deutsch",
+  "Root.Nav.Language.Three.Value": "de",
+
+  "Home.Jumbo.Title": "Apostroph docs",
+  "Home.Jumbo.Subtitle": "La documentation officielle des outils Apostroph",
+
+  "Home.CardOne.Title": "myAPOSTROPH",
+  "Home.CardOne.Subtitle": "Notre portail en ligne",
+  "Home.CardOne.Text": "Notre portail vous permet de gérer vos traductions en temps réel. Commandez des traductions et demandez des offres, le tout en quelques clics!",
+  "Home.CardOne.Link": "Aller à la documentation",
+
+  "Home.CardTwo.Title": "myFREELANCE",
+  "Home.CardTwo.Subtitle": "Notre portail en ligne",
+  "Home.CardTwo.Text": "Notre portail vous permet de gérer vos traductions en temps réel. Commandez des traductions et demandez des offres, le tout en quelques clics!",
+  "Home.CardTwo.Link": "Aller à la documentation",
+
+  "Error.Title": "Oups, une erreur s'est produite ...",
+  "Error.Description": "La ressource que vous recherchez n'existe pas. Consultez les informations ci-dessous pour plus de détails.",
+  "Error.Code": "ERR_{{code}}",
+  "Error.404.Title": "Page non trouvée",
+  "Error.404.Description": "La page n'existe pas.",
+  "Error.404.Solution": "Veuillez vérifier que votre lien est valide.",
+
+  "Error.1000.Title": "Documentation introuvable",
+  "Error.1000.Description": "Le document <strong>{{valueOne}}</strong> n'existe pas..",
+  "Error.1000.Solution": "Veuillez vérifier que votre lien est valide ou essayez de rechercher la documentation dans une autre langue."
+  }

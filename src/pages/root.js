@@ -42,10 +42,6 @@ const RootPage = () => {
               onClick={() => i18n.changeLanguage(t('Root.Nav.Language.Two.Value'))}>
               {t('Root.Nav.Language.Two')}
             </NavDropdown.Item>
-            <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Root.Nav.Language.Three.Value'))}>
-              {t('Root.Nav.Language.Three')}
-            </NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
       </Navbar>

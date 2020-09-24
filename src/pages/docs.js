@@ -24,7 +24,7 @@ const DocsPage = (props) => {
         setLanguage(i18n.language);
       }
     }
-  }, [props.match.params.docId, i18n.language]);
+  }, [props.match.params.docId, i18n.language, docId, language]);
 
   useEffect(() => {
     fetchDoc(docId, language);

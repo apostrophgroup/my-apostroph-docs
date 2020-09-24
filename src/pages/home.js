@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Card, Col, Row, Jumbotron } from 'react-bootstrap'
 
@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import logoLight from './../assets/svg/logo-light.svg';
 
 const HomePage = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Container fluid>

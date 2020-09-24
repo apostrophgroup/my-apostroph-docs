@@ -1,66 +1,59 @@
-import React from 'react';
-import { BrowserRouter,  Switch,  Route,  Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Card, Button, Col, Row, Jumbotron } from 'react-bootstrap'
 
-import { useTranslation } from 'react-i18next'
+import logoLight from './../assets/svg/logo-light.svg';
 
-import AboutPage from './about';
-import ErrorPage from './error';
 
-import DocsPage from './docs';
-
-import logo from './../assets/svg/logo.svg';
-
-const HomePage = () => {
-  const { t, i18n } = useTranslation();
-
-  return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand as={Link} to="/home">
-          <img
-            alt=""
-            src={logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />{' '}
-          Apostroph docs
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/home">{t('Home.Nav.Home')}</Nav.Link>
-            <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Home.Nav.MyApostroph')}</Nav.Link>
-            <Nav.Link as={Link} to={'/docs/myFreelance'}>{t('Home.Nav.MyFreelance')}</Nav.Link>
-          </Nav>
-          <NavDropdown title={t('Home.Nav.Language')} className="language-selector">
-            <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Home.Nav.Language.One.Value'))}>
-              {t('Home.Nav.Language.One')}
-            </NavDropdown.Item>
-            <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Home.Nav.Language.Two.Value'))}>
-              {t('Home.Nav.Language.Two')}
-            </NavDropdown.Item>
-            <NavDropdown.Item
-              onClick={() => i18n.changeLanguage(t('Home.Nav.Language.Three.Value'))}>
-              {t('Home.Nav.Language.Three')}
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Navbar.Collapse>
-      </Navbar>
-      <div className="main">
-        <Switch>
-          <Route path="/home" component={ AboutPage }/>
-          <Route path="/about" component={ AboutPage }/>
-          <Route exact path="/docs/:docId" component={ DocsPage }/>
-          <Route path="/error" component={ ErrorPage }/>
-          <Route component={ ErrorPage }/>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+class HomePage extends Component {
+  render() {
+    return (
+      <Container fluid>
+        <Row>
+          <Col style={{ paddingRight: 0, paddingLeft: 0 }}>
+            <Jumbotron className="home-jumbotron" fluid style={{backgroundImage : `url(${logoLight})`}}>
+              <Container>
+                <h1>Apostroph docs</h1>
+                <p>
+                  The official documentation for Apostroph tools
+                </p>
+              </Container>
+            </Jumbotron>
+          </Col>
+        </Row>
+      <Container>
+      <Row>
+        <Col>
+          <Card>
+            <Card.Body>
+              <Card.Title>myAPOSTROPH</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">Notre portail en ligne</Card.Subtitle>
+              <Card.Text>
+                Notre portail vous permet de gerer vos traductions en temps réels.
+                Commandez des traductions & demandez des offres, le tout en quelques clics!
+              </Card.Text>
+              <Card.Link as={Link} to={'/docs/myApostroph'}>Accedez à la documentation</Card.Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+        <Card>
+          <Card.Body>
+            <Card.Title>myFREELANCE</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Notre portail en ligne</Card.Subtitle>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of
+              the card's content.
+            </Card.Text>
+            <Card.Link as={Link} to={'/docs/myFreelance'}>Accedez à la documentation</Card.Link>
+          </Card.Body>
+        </Card>
+        </Col>
+      </Row>
+</Container>
+      </Container>
+    );
+  }
 }
 
 export default HomePage;

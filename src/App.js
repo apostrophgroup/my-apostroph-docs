@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react';
 import './i18n';
 
-import HomePage from './pages/home';
+import RootPage from './pages/root';
 
 const App = () => {
   return (
       <Suspense fallback={null}>
-        <HomePage/>
+        <RootPage/>
       </Suspense>
   );
 }

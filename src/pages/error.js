@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Col, Row, Alert } from 'react-bootstrap'
 import { useTranslation, Trans } from 'react-i18next'
 import { BugFill } from 'react-bootstrap-icons';
 
 const ErrorPage = (props) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const [errorCode, setErrorCode] = useState(props.location.code ? props.location.code : 0);
-  const [valueOne, setValueOne] = useState(props.location.valueOne ? props.location.valueOne : '');
+  const [errorCode] = useState(props.location.code ? props.location.code : 0);
+  const [valueOne] = useState(props.location.valueOne ? props.location.valueOne : '');
   return (
     <Container>
       <Row>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Card, Button, Col, Row, Jumbotron } from 'react-bootstrap'
+import { Container, Card, Col, Row, Jumbotron } from 'react-bootstrap'
 
 import logoLight from './../assets/svg/logo-light.svg';
 

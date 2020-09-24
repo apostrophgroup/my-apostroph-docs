@@ -8,7 +8,7 @@ import { Link45deg } from 'react-bootstrap-icons';
 import ReactMarkdown from 'react-markdown';
 
 const DocsPage = (props) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const history = useHistory();
 
   const [loading, setLoading] = useState(true);
@@ -24,11 +24,11 @@ const DocsPage = (props) => {
         setLanguage(i18n.language);
       }
     }
-  });
+  }, [props.match.params.docId, i18n.language]);
 
   useEffect(() => {
     fetchDoc(docId, language);
-  }, [docId, language]);
+  }, [docId, language]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function openErrorPage(code, path) {
     history.push({
@@ -47,7 +47,7 @@ const DocsPage = (props) => {
         setLoading(false);
         setData(content);
       } else {
-        throw 1000;
+        throw new Error(1000);
       }
     } catch (e) {
       openErrorPage(1000, '/docs/' + docId + '/' + language + '.md');

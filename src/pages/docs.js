@@ -14,14 +14,14 @@ const DocsPage = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
   const [docId, setDocId] = useState(props.match.params.docId);
-  const [language, setLanguage] = useState(i18n.language.split['-'][0]);
+  const [language, setLanguage] = useState(i18n.language.split('-')[0]);
 
   useEffect(() => {
     if (docId !== props.match.params.docId) {
       setDocId(props.match.params.docId)
     } else {
       if (i18n.language !== language) {
-        setLanguage(i18n.language.split['-'][0]);
+        setLanguage(i18n.language.split('-')[0]);
       }
     }
   }, [props.match.params.docId, i18n.language, docId, language]);

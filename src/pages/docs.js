@@ -46,6 +46,17 @@ const DocsPage = (props) => {
       if (!content.startsWith('<!DOCTYPE html>')) {
         setLoading(false);
         setData(content);
+
+        //Go to anchor
+        setTimeout(() => {
+          const hash = window.location.hash.substr(1);
+
+          if (hash) {
+            document.getElementById(hash).scrollIntoView();
+          } else {
+            window.scrollTo(0, 0);
+          }
+        }, 100);
       } else {
         throw new Error(1000);
       }

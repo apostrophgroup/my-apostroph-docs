@@ -1,6 +1,6 @@
 {
-  "homepage": "http://apostrophgroup.github.io/my-apostroph-docs",
-  "name": "my-apostroph-docs",
+  "homepage": "http://apostrophgroup.github.io/apostroph-docs",
+  "name": "apostroph-docs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

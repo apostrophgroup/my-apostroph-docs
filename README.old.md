@@ -1,2 +1,2 @@
-# my-apostroph-docs
+# Apostroph docs
 ## subtitle

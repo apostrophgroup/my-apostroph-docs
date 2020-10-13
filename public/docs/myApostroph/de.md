@@ -1,7 +1,7 @@
 [dashboard]: /assets/de/dashboard.png "überblick"
-[mt]: /assets/de/mt.png "Machine Translation"
+[mt]: /assets/de/mt.gif "Machine Translation"
 [copy-order]: /assets/de/copy-order.png "Auftrag kopieren"
-[filter-orders]: /assets/de/filter-orders.png "Auftrage filtern"
+[filter-orders]: /assets/de/filter-orders.gif "Auftrage filtern"
 [last-orders]: /assets/de/last-orders.png "Auftragsübersicht"
 
 # Anleitung myAPOSTROPH

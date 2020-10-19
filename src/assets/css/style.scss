@@ -78,7 +78,7 @@ $navbar-bg: rgb(255, 255, 255);
   @for $index from 1 through 6 {
     h#{$index}{
       margin-top: 1.5em;
-      
+
       svg {
         cursor: pointer;
       }

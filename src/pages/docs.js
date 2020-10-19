@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
 
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col, ListGroup } from 'react-bootstrap'
 import { Link45deg } from 'react-bootstrap-icons';
 
 import ReactMarkdown from 'react-markdown';
@@ -15,6 +15,20 @@ const DocsPage = (props) => {
   const [data, setData] = useState(null);
   const [docId, setDocId] = useState(props.match.params.docId);
   const [language, setLanguage] = useState(i18n.language.split('-')[0]);
+
+  let arrayHeaders = [];
+
+  const [headers, setHeaders] = useState(arrayHeaders);
+
+  useEffect(() => {
+    if (headers.length != arrayHeaders.length) {
+      setHeaders(arrayHeaders);
+    }
+    console.log('effect', arrayHeaders);
+
+    //
+
+  }, [arrayHeaders]);
 
   useEffect(() => {
     if (docId !== props.match.params.docId) {
@@ -40,6 +54,8 @@ const DocsPage = (props) => {
 
   async function fetchDoc(docId, language) {
     try {
+      arrayHeaders = [];
+
       const response = await fetch(process.env.PUBLIC_URL + '/docs/' + docId + '/' + language + '.md');
       const content = await response.text();
 
@@ -85,6 +101,11 @@ const DocsPage = (props) => {
     if (headerRef) {
       slug = headerRef.props.href.replace('#', '');
       headerRef.props.children.push(<Link45deg key={headerRef.props.children.length}/>);
+
+      arrayHeaders.push({
+        title: props.children[0].props.value,
+        slug: headerRef.props.href
+      });
     }
 
     return React.createElement('h' + props.level,
@@ -93,13 +114,42 @@ const DocsPage = (props) => {
   }
 
   return (
-    <Container>
-      { loading ? null : <ReactMarkdown
-        className="doc-content"
-        source={data}
-        renderers={{heading: headingRenderer}}
-        transformImageUri={(e) => transformImageUri(docId, e)} /> }
+    <>
+    <style type="text/css">
+    {`
+    .test {
+      position: sticky;
+      top: 4rem;
+      height: calc(100% - 4rem);
+    }
+    `}
+  </style>
+
+    <Container fluid>
+      <Row>
+      { loading ? null :
+        <>
+        <Col className="test" lg={3}>
+          <ListGroup>
+          {headers.map((h) =>
+            <ListGroup.Item as="a" href={h.slug}>{h.title}</ListGroup.Item>
+          )}
+          </ListGroup>
+        </Col>
+        <Container>
+        <Col>
+          <ReactMarkdown
+          className="doc-content"
+          source={data}
+          renderers={{heading: headingRenderer}}
+          transformImageUri={(e) => transformImageUri(docId, e)} />
+        </Col>
+        </Container>
+        </>
+      }
+      </Row>
     </Container>
+    </>
   );
 }
 

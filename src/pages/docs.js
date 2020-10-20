@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
 
-import { Container, Row, Col, ListGroup } from 'react-bootstrap'
+import { Container, Row, Col, Nav } from 'react-bootstrap'
 import { Link45deg } from 'react-bootstrap-icons';
 
 import ReactMarkdown from 'react-markdown';
@@ -16,19 +16,14 @@ const DocsPage = (props) => {
   const [docId, setDocId] = useState(props.match.params.docId);
   const [language, setLanguage] = useState(i18n.language.split('-')[0]);
 
-  let arrayHeaders = [];
-
-  const [headers, setHeaders] = useState(arrayHeaders);
+  let summary = [];
+  const [summaryDisplay, setSummaryDisplay] = useState(summary);
 
   useEffect(() => {
-    if (headers.length != arrayHeaders.length) {
-      setHeaders(arrayHeaders);
+    if (JSON.stringify(summaryDisplay) != JSON.stringify(summary)) {
+      setSummaryDisplay(summary);
     }
-    console.log('effect', arrayHeaders);
-
-    //
-
-  }, [arrayHeaders]);
+  }, [summary]);
 
   useEffect(() => {
     if (docId !== props.match.params.docId) {
@@ -54,12 +49,11 @@ const DocsPage = (props) => {
 
   async function fetchDoc(docId, language) {
     try {
-      arrayHeaders = [];
-
       const response = await fetch(process.env.PUBLIC_URL + '/docs/' + docId + '/' + language + '.md');
       const content = await response.text();
 
       if (!content.startsWith('<!DOCTYPE html>')) {
+        summary = [];
         setLoading(false);
         setData(content);
 
@@ -102,7 +96,7 @@ const DocsPage = (props) => {
       slug = headerRef.props.href.replace('#', '');
       headerRef.props.children.push(<Link45deg key={headerRef.props.children.length}/>);
 
-      arrayHeaders.push({
+      summary.push({
         title: props.children[0].props.value,
         slug: headerRef.props.href
       });
@@ -115,40 +109,53 @@ const DocsPage = (props) => {
 
   return (
     <>
-    <style type="text/css">
-    {`
-    .test {
-      position: sticky;
-      top: 4rem;
-      height: calc(100% - 4rem);
-    }
-    `}
-  </style>
+      <style type="text/css">
+        {`
+        .summary {
+          position: sticky;
+          top: 56px;
+          height: calc(100vh - 56px);
+          background-color: white;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+          padding: 15px;
+        }
 
-    <Container fluid>
-      <Row>
-      { loading ? null :
-        <>
-        <Col className="test" lg={3}>
-          <ListGroup>
-          {headers.map((h) =>
-            <ListGroup.Item as="a" href={h.slug}>{h.title}</ListGroup.Item>
-          )}
-          </ListGroup>
-        </Col>
-        <Container>
-        <Col>
-          <ReactMarkdown
-          className="doc-content"
-          source={data}
-          renderers={{heading: headingRenderer}}
-          transformImageUri={(e) => transformImageUri(docId, e)} />
-        </Col>
-        </Container>
-        </>
-      }
-      </Row>
-    </Container>
+        .nav {
+          height: 100%;
+          overflow: auto;
+          flex-wrap: nowrap;
+        }
+
+        .nav-link {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        `}
+      </style>
+      <Container fluid>
+        { loading ? null :
+          <Row>
+            <Col className="summary" xs={3}>
+              <Nav className="flex-column">
+                <Nav.Link disabled>{docId}</Nav.Link>
+              {
+                summaryDisplay.map((s) => <Nav.Link href={s.slug}>{s.title}</Nav.Link >)
+              }
+              </Nav>
+            </Col>
+            <Col xs={9}>
+              <Container>
+                <ReactMarkdown
+                className="doc-content"
+                source={data}
+                renderers={{heading: headingRenderer}}
+                transformImageUri={(e) => transformImageUri(docId, e)} />
+              </Container>
+            </Col>
+          </Row>
+        }
+      </Container>
     </>
   );
 }

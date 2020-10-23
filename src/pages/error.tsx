@@ -3,11 +3,11 @@ import { Container, Col, Row, Alert } from 'react-bootstrap'
 import { useTranslation, Trans } from 'react-i18next'
 import { BugFill } from 'react-bootstrap-icons';
 
-const ErrorPage = (props) => {
+const ErrorPage = (props: any) => {
   const { t } = useTranslation();
 
-  const [errorCode] = useState(props.location.code ? props.location.code : 404);
-  const [valueOne] = useState(props.location.valueOne ? props.location.valueOne : '');
+  const [errorCode] = useState<number>(Number(props.location.code) ? props.location.code : 404);
+  const [valueOne] = useState<string>(props.location.valueOne ? props.location.valueOne : '');
   return (
     <Container style={{marginTop: '40px', marginBottom: '40px'}}>
       <Row>

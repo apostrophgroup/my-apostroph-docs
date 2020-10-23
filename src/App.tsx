@@ -5,9 +5,9 @@ import RootPage from './pages/root';
 
 const App = () => {
   return (
-      <Suspense fallback={null}>
-        <RootPage/>
-      </Suspense>
+    <Suspense fallback={null}>
+      <RootPage/>
+    </Suspense>
   );
 }
 

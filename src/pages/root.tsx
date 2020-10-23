@@ -32,12 +32,12 @@ const RootPage = () => {
             <Nav.Link as={Link} to="/">{t('Root.Nav.Home')}</Nav.Link>
             <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Root.Nav.MyApostroph')}</Nav.Link>
           </Nav>
-          <NavDropdown title={t('Root.Nav.Language')} className="language-selector">
-            <NavDropdown.Item
+          <NavDropdown id="language-selector" title={t('Root.Nav.Language')} className="language-selector">
+            <NavDropdown.Item key="language-selector-one"
               onClick={() => i18n.changeLanguage(t('Root.Nav.Language.One.Value'))}>
               {t('Root.Nav.Language.One')}
             </NavDropdown.Item>
-            <NavDropdown.Item
+            <NavDropdown.Item key="language-selector-two"
               onClick={() => i18n.changeLanguage(t('Root.Nav.Language.Two.Value'))}>
               {t('Root.Nav.Language.Two')}
             </NavDropdown.Item>

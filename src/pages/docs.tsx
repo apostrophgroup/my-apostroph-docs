@@ -7,23 +7,28 @@ import { Link45deg } from 'react-bootstrap-icons';
 
 import ReactMarkdown from 'react-markdown';
 
-const DocsPage = (props) => {
+interface SummaryLink {
+ title: string,
+ slug: string
+};
+
+const DocsPage = (props: any) => {
   const { i18n } = useTranslation();
-  const history = useHistory();
+  const history: any = useHistory();
 
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(null);
-  const [docId, setDocId] = useState(props.match.params.docId);
-  const [language, setLanguage] = useState(i18n.language.split('-')[0]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [data, setData] = useState<string>('');
+  const [docId, setDocId] = useState<string>(props.match.params.docId);
+  const [language, setLanguage] = useState<string>(i18n.language.split('-')[0]);
 
-  let summary = [];
-  const [summaryDisplay, setSummaryDisplay] = useState(summary);
+  let summary = Array<SummaryLink>();
+  const [summaryDisplay, setSummaryDisplay] = useState<Array<SummaryLink>>(summary);
 
   useEffect(() => {
     if (JSON.stringify(summaryDisplay) !== JSON.stringify(summary)) {
       setSummaryDisplay(summary);
     }
-  }, [summary]);
+  }, [summary, summaryDisplay]);
 
   useEffect(() => {
     if (docId !== props.match.params.docId) {
@@ -39,7 +44,7 @@ const DocsPage = (props) => {
     fetchDoc(docId, language);
   }, [docId, language]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  function openErrorPage(code, path) {
+  function openErrorPage(code: number, path: string) {
     history.push({
       pathname: '/error',
       code: code,
@@ -47,7 +52,7 @@ const DocsPage = (props) => {
     });
   }
 
-  async function fetchDoc(docId, language) {
+  async function fetchDoc(docId: string, language: string) {
     try {
       const response = await fetch(process.env.PUBLIC_URL + '/docs/' + docId + '/' + language + '.md');
       const content = await response.text();
@@ -62,20 +67,23 @@ const DocsPage = (props) => {
           const hash = window.location.hash.substr(1);
 
           if (hash) {
-            document.getElementById(hash).scrollIntoView();
+            const hashElement = document.getElementById(hash);
+            if (hashElement) {
+              hashElement.scrollIntoView();
+            }
           } else {
             window.scrollTo(0, 0);
           }
         }, 100);
       } else {
-        throw new Error(1000);
+        throw new Error();
       }
     } catch (e) {
       openErrorPage(1000, '/docs/' + docId + '/' + language + '.md');
     }
   }
 
-  function transformImageUri(docId, originalUri) {
+  function transformImageUri(docId: string, originalUri: string) {
     return process.env.PUBLIC_URL + '/docs/' + docId + originalUri;
   }
 
@@ -84,9 +92,9 @@ const DocsPage = (props) => {
   }*/
 
   //https://github.com/rexxars/react-markdown/issues/69
-  function headingRenderer(props) {
+  function headingRenderer(props: any) {
     let slug = undefined;
-    const headerRef = props.children.find((c) => c.props.href !== undefined);
+    const headerRef = props.children.find((c: any) => c.props.href !== undefined);
 
     //If the header contains a link then we take out the slug
     //Set the slug as id for the header

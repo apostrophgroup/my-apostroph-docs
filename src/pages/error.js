@@ -9,7 +9,7 @@ const ErrorPage = (props) => {
   const [errorCode] = useState(props.location.code ? props.location.code : 404);
   const [valueOne] = useState(props.location.valueOne ? props.location.valueOne : '');
   return (
-    <Container>
+    <Container style={{marginTop: '40px', marginBottom: '40px'}}>
       <Row>
         <Col sm={2}>
         <BugFill color='var(--apostroph-color)' size={96} style={{display: 'block', margin: 'auto'}} />

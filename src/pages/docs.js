@@ -20,7 +20,7 @@ const DocsPage = (props) => {
   const [summaryDisplay, setSummaryDisplay] = useState(summary);
 
   useEffect(() => {
-    if (JSON.stringify(summaryDisplay) != JSON.stringify(summary)) {
+    if (JSON.stringify(summaryDisplay) !== JSON.stringify(summary)) {
       setSummaryDisplay(summary);
     }
   }, [summary]);

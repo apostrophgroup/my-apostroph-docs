@@ -31,7 +31,6 @@ const RootPage = () => {
           <Nav className="mr-auto">
             <Nav.Link as={Link} to="/">{t('Root.Nav.Home')}</Nav.Link>
             <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Root.Nav.MyApostroph')}</Nav.Link>
-            <Nav.Link as={Link} to={'/docs/myFreelance'}>{t('Root.Nav.MyFreelance')}</Nav.Link>
           </Nav>
           <NavDropdown title={t('Root.Nav.Language')} className="language-selector">
             <NavDropdown.Item

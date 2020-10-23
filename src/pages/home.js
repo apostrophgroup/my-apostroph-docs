@@ -10,7 +10,7 @@ const HomePage = () => {
   const { t } = useTranslation();
 
   return (
-    <Container fluid>
+    <Container fluid style={{marginTop: '40px', marginBottom: '40px'}}>
       <Row>
         <Col style={{ paddingRight: 0, paddingLeft: 0 }}>
           <Jumbotron className="home-jumbotron" fluid style={{backgroundImage : `url(${logoLight})`}}>
@@ -40,20 +40,6 @@ const HomePage = () => {
             </Card>
           </Col>
           <Col>
-            <Card>
-              <Card.Body>
-                <Card.Title>{t('Home.CardTwo.Title')}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  {t('Home.CardTwo.Subtitle')}
-                </Card.Subtitle>
-                <Card.Text>
-                  {t('Home.CardTwo.Text')}
-                </Card.Text>
-                <Card.Link as={Link} to={'/docs/myFreelance'}>
-                  {t('Home.CardTwo.Link')}
-                </Card.Link>
-              </Card.Body>
-            </Card>
           </Col>
         </Row>
       </Container>

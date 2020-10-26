@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
 
-import { Container, Row, Col, Nav } from 'react-bootstrap'
+import { Container, Row, Col, Nav, Spinner } from 'react-bootstrap'
 import { Link45deg } from 'react-bootstrap-icons';
 
 import ReactMarkdown from 'react-markdown';
@@ -28,7 +28,7 @@ const DocsPage = (props: any) => {
     if (JSON.stringify(summaryDisplay) !== JSON.stringify(summary)) {
       setSummaryDisplay(summary);
     }
-  }, [summary, summaryDisplay]);
+  }, [summary]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (docId !== props.match.params.docId) {
@@ -58,7 +58,7 @@ const DocsPage = (props: any) => {
       const content = await response.text();
 
       if (!content.startsWith('<!DOCTYPE html>')) {
-        summary = [];
+        //summary = [];
         setLoading(false);
         setData(content);
 
@@ -92,14 +92,13 @@ const DocsPage = (props: any) => {
   }*/
 
   //https://github.com/rexxars/react-markdown/issues/69
-  function headingRenderer(props: any) {
+  const headingRenderer = (props: any) => {
     let slug = undefined;
     const headerRef = props.children.find((c: any) => c.props.href !== undefined);
 
     //If the header contains a link then we take out the slug
     //Set the slug as id for the header
     //Add a nice link
-
     if (headerRef) {
       slug = headerRef.props.href.replace('#', '');
       headerRef.props.children.push(<Link45deg key={headerRef.props.children.length}/>);
@@ -142,13 +141,20 @@ const DocsPage = (props: any) => {
         `}
       </style>
       <Container fluid>
-        { loading ? null :
+        { loading ?
+          <Row>
+            <Col style={{
+              justifyContent: 'center',
+              display: 'flex'}}>
+              <Spinner animation="border" variant="primary"></Spinner>
+            </Col>
+          </Row> :
           <Row>
             <Col className="summary" xs={3}>
               <Nav className="flex-column">
                 <Nav.Link disabled>{docId}</Nav.Link>
               {
-                summaryDisplay.map((s) => <Nav.Link href={s.slug}>{s.title}</Nav.Link >)
+                summaryDisplay.map((s) => <Nav.Link href={s.slug}>{s.title}</Nav.Link>)
               }
               </Nav>
             </Col>

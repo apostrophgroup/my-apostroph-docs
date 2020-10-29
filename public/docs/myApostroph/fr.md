@@ -26,21 +26,21 @@ Celle-ci est chargée dans votre langue de contact. Vous pouvez à tout moment c
 **Si vous souhaitez changer votre langue de contact n'hésitez pas à en faire la demande à votre gestionnaire de projet.**
 
 ## Inscription [](#sign-up)
-Si vous ne disposez pas encore d'un compte utilisateur myAPOSTROPH, enregistrez-vous via la page accueil (voir [Accès](#introduction)). Suivez ensuite les instructions en cliquant sur **Inscription**.
+Si vous ne disposez pas encore d'un compte utilisateur myAPOSTROPH, enregistrez-vous via la page accueil (voir [Accès](#access)). Suivez ensuite les instructions en cliquant sur **Inscription**.
 
 **Si vous rencontrez des problèmes n'hésitez pas à contacter votre gestionnaire de projet.**
 
 ### Création du mot de passe initial [](#initial-pwd)
 
-Une fois votre inscription effectuée avec succès il vous faudra encore créer votre mot de passe. Pour ce faire, retournez sur la page accueil (voir [Accès](#introduction)), cliquez sur **Mot de passe oublié?** et suivez les instructions. Vous recevrez un lien vous permettant de configurer votre mot de passe.
+Une fois votre inscription effectuée avec succès il vous faudra encore créer votre mot de passe. Pour ce faire, retournez sur la page accueil (voir [Accès](#access)), cliquez sur **Mot de passe oublié?** et suivez les instructions. Vous recevrez un lien vous permettant de configurer votre mot de passe.
 
 ### Changer de mot de passe [](#change-pwd)
 
-Vous pouvez changer de mot de passe à tout moment en utilisant le menu de la page d'accueil (voir [Vue d'ensemble](#orders-overview)) puis en cliquant sur **Changer le mot de passe**.
+Vous pouvez changer de mot de passe à tout moment en utilisant le menu de la page d'accueil (voir [Vue d'ensemble](#dashboard)) puis en cliquant sur **Changer le mot de passe**.
 
 ### Mot de passe oublié [](#forgot-pwd)
 
-Si vous avez oublié votre mot de passe, vous pouvez à tout moment en demander un nouveau via l'écran de connexion (voir [Accès](#introduction)). Il vous suffit de suivre les instructions en cliquant sur **Mot de passe oublié?**.
+Si vous avez oublié votre mot de passe, vous pouvez à tout moment en demander un nouveau via l'écran de connexion (voir [Accès](#access)). Il vous suffit de suivre les instructions en cliquant sur **Mot de passe oublié?**.
 
 ## Droits d'utilisateur [](#user-rights)
 
@@ -53,21 +53,21 @@ Sur la plateforme myAPOSTROPH, vous êtes soit un **utilisateur** ou un **super 
 
 
 
-Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super utilisateur** voit uniquement qu'un mandat à été créé, mais n'as pas accès au détails. Nous garantissons ainsi une sécurité supplémentaire pour les mandats confidentiels. Pour en savoir plus sur les mandats confidentiels, aller à la section [Mandats confidentiels]([](#confidential-orders)).
+Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super utilisateur** voit uniquement qu'un mandat à été créé, mais n'as pas accès au détails. Nous garantissons ainsi une sécurité supplémentaire pour les mandats confidentiels. Pour en savoir plus sur les mandats confidentiels, aller à la section [Mandats confidentiels](#confidential-orders).
 
 **Si vous souhaitez disposer d'un accès super utilisateur, contactez votre gestionnaire de projet.**
 
 ## Vue d'ensemble [](#dashboard)
 
-La page d'accueil vous permet de créer des nouveau mandats ou de demander des offres (voir [Saisi de mandat ou demande d'offre](#orders)). Elle vous offre aussi la possibilité de voir vos derniers mandats et leurs états d'avancement (voir [Dernières commandes](#last-orders)).
+La page d'accueil vous permet de créer des nouveau mandats ou de demander des offres (voir [Saisi de mandat ou demande d'offre](#orders)). Elle vous offre aussi la possibilité de voir vos derniers mandats et leurs états d'avancement (voir [Dernières mandats](#last-orders)).
 
-Un menu est à votre disposition en haut à droite de l'écran. Celui-ci vous permet accéder à la liste de vos mandats (voir [Liste des mandats](#orders)) ainsi qu'au module de traduction automatique myAPOSTROPH A.i (voir [myAPOSTROPH a.i. / Traduction automatique](#machine-translation)).
+Un menu est à votre disposition en haut à droite de l'écran. Celui-ci vous permet accéder à la liste de vos mandats (voir [Liste des mandats](#orders-list)) ainsi qu'au module de traduction automatique myAPOSTROPH A.i (voir [myAPOSTROPH a.i. / Traduction automatique](#machine-translation)).
 
 ![alt text][dashboard]
 
-### Dernières mandats [](#last-oders)
+### Dernières mandats [](#last-orders)
 
-L'affichage des derniers mandats vous permet de garder une bonne vue d'ensemble des commandes soumises et d'en vérifier l'état d'avancement. Vous pouvez afficher les détails de chaque mandat en cliquant sur celui-ci. Si vous souhaitez la liste complète des mandats cliquez sur **Tous**, vous accèderez ainsi  à la liste des mandats (voir [Liste des mandats](#orders)).
+L'affichage des derniers mandats vous permet de garder une bonne vue d'ensemble des commandes soumises et d'en vérifier l'état d'avancement. Vous pouvez afficher les détails de chaque mandat en cliquant sur celui-ci. Si vous souhaitez la liste complète des mandats cliquez sur **Tous**, vous accèderez ainsi  à la liste des mandats (voir [Liste des mandats](#orders-list)).
 
 ![alt text][last-orders]
 
@@ -85,7 +85,7 @@ Les langues utilisées le plus fréquemment sont reconnues par votre navigateur 
 
 Il est possible de marquer votre mandat comme **Confidentiel**. Un mandat confidentiel est traité avec une discrétion supplémentaire. Les mandats signalés comme confidentiels **ne peuvent pas être consultés** par un **super utilisateur** de votre entreprise (voir [Droit d'utilisateur](#user-rights)).
 
-## Liste des mandats [](#orders)
+## Liste des mandats [](#orders-list)
 
 La liste des mandats affiche tous les mandats. En cliquant sur **Filtre** vous pouvez choisir des critères d'affichages (voir [Filtres](#orders-filter)). Il est possible d'exporter la liste sous format CSV en cliquant **Exporter**.
 

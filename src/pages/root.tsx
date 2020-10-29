@@ -16,7 +16,7 @@ const RootPage = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/" style={{fontWeight: 700}}>
           <img
             alt=""
             src={logo}
@@ -24,7 +24,7 @@ const RootPage = () => {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Apostroph docs
+          APOSTROPH <div style={{fontWeight: 300, fontStyle: 'italic', display: 'inline'}}>docs</div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

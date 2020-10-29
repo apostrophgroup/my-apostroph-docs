@@ -15,7 +15,7 @@ const HomePage = () => {
         <Col style={{ paddingRight: 0, paddingLeft: 0 }}>
           <Jumbotron className="home-jumbotron" fluid style={{backgroundImage : `url(${logoLight})`}}>
             <Container>
-              <h1>{t('Home.Jumbo.Title')}</h1>
+              <h1>APOSTROPH <div style={{fontWeight: 300, fontStyle: 'italic', display: 'inline'}}>docs</div></h1>
               <p>{t('Home.Jumbo.Subtitle')}</p>
             </Container>
           </Jumbotron>

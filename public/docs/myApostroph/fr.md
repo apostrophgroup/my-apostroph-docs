@@ -53,7 +53,7 @@ Sur la plateforme myAPOSTROPH, vous êtes soit un **utilisateur** ou un **super 
 
 
 
-Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super utilisateur** voit uniquement qu'un mandat à été créé, mais n'as pas accès au détails. Nous garantissons ainsi une sécurité supplémentaire pour les mandats confidentiels. Pour en savoir plus sur les mandats confidentiels, aller à la section [Mandats confidentiels lbabla](#confidential-orders).
+Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super utilisateur** voit uniquement qu'un mandat à été créé, mais n'as pas accès au détails. Nous garantissons ainsi une sécurité supplémentaire pour les mandats confidentiels. Pour en savoir plus sur les mandats confidentiels, aller à la section [Mandats confidentiels](#confidential-orders).
 
 **Si vous souhaitez disposer d'un accès super utilisateur, contactez votre gestionnaire de projet.**
 

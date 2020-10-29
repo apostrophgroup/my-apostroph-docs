@@ -6,6 +6,7 @@ import { Container, Row, Col, Nav, Spinner } from 'react-bootstrap'
 import { Link45deg } from 'react-bootstrap-icons';
 
 import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
 interface SummaryLink {
  title: string,
@@ -164,6 +165,7 @@ const DocsPage = (props: any) => {
                 className="doc-content"
                 source={data}
                 renderers={{heading: headingRenderer}}
+                plugins={[gfm]}
                 transformImageUri={(e) => transformImageUri(docId, e)} />
               </Container>
             </Col>

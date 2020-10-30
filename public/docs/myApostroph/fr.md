@@ -1,7 +1,7 @@
 [user-languages]: /assets/fr/user-languages.gif
 [dashboard]: /assets/fr/dashboard.gif "En un coup d'oeil"
 [copy-order]: /assets/fr/copy-order.png "Copier un mandat"
-[filter-orders]: /assets/fr/filter-orders.png "Filtrer les commandes"
+[filter-orders]: /assets/fr/filter-orders.gif "Filtrer les commandes"
 [last-orders]: /assets/fr/last-orders.png "Derniers mandats"
 
 # myAPOSTROPH

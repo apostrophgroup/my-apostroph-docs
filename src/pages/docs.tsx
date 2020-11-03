@@ -151,7 +151,7 @@ const DocsPage = (props: any) => {
             </Col>
           </Row> :
           <Row>
-            <Col className="summary" xs={3}>
+            <Col className="summary d-none d-lg-block" lg={3}>
               <Nav className="flex-column">
                 <Nav.Link disabled>{docId}</Nav.Link>
               {
@@ -159,7 +159,7 @@ const DocsPage = (props: any) => {
               }
               </Nav>
             </Col>
-            <Col xs={9}>
+            <Col xs={12} lg={9}>
               <Container>
                 <ReactMarkdown
                 className="doc-content"

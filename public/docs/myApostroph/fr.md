@@ -61,7 +61,7 @@ Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super ut
 
 La page d'accueil vous permet de créer des nouveau mandats ou de demander des offres (voir [Saisi de mandat ou demande d'offre](#orders)). Elle vous offre aussi la possibilité de voir vos derniers mandats et leurs états d'avancement (voir [Dernières mandats](#last-orders)).
 
-Un menu est à votre disposition en haut à droite de l'écran. Celui-ci vous permet accéder à la liste de vos mandats (voir [Liste des mandats](#orders-list)) ainsi qu'au module de traduction automatique myAPOSTROPH A.i (voir [myAPOSTROPH a.i. / Traduction automatique](#machine-translation)).
+Un menu est à votre disposition en haut à droite de l'écran. Celui-ci vous permet accéder à la liste de vos mandats (voir [Liste des mandats](#orders-list)) ainsi qu'au module de traduction automatique myAPOSTROPH.ai (voir [myAPOSTROPH.ai / Traduction automatique](#machine-translation)).
 
 ![alt text][dashboard]
 
@@ -118,9 +118,9 @@ Pour les mandats récurrents la fonction copier un mandat est à votre dispositi
 
 ![alt text][copy-order]
 
-## myAPOSTROPH A.i. / Traduction automatique [](#machine-translation)
+## myAPOSTROPH.ai / Traduction automatique [](#machine-translation)
 
-Les clientes et clients ayant activé le module myAPOSTROPH A.i. peuvent accéder à celui-ci via le menu principal (voir [Vue d'ensemble](#dashboard)). Une fois les langues source et cible choisi vous pourrez commencer la traduction.
+Les clientes et clients ayant activé le module myAPOSTROPH.ai peuvent accéder à celui-ci via le menu principal (voir [Vue d'ensemble](#dashboard)). Une fois les langues source et cible choisi vous pourrez commencer la traduction.
 
 ## Archive fichiers source/fichiers cible [](#archives)
 

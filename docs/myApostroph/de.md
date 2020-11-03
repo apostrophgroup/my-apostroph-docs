@@ -1,63 +1,128 @@
-[dashboard]: /assets/de/dashboard.png "überblick"
-[mt]: /assets/de/mt.gif "Machine Translation"
+[user-languages]: /assets/de/user-languages.gif
+[dashboard]: /assets/de/dashboard.gif "Dashboard"
 [copy-order]: /assets/de/copy-order.png "Auftrag kopieren"
-[filter-orders]: /assets/de/filter-orders.gif "Auftrage filtern"
-[last-orders]: /assets/de/last-orders.png "Auftragsübersicht"
+[filter-orders]: /assets/de/filter-orders.gif "Aufträge filtern"
+[last-orders]: /assets/de/last-orders.png "Letzte Aufträge"
 
-# Anleitung myAPOSTROPH
+# myAPOSTROPH
 
-### Unser Onlineportal [](#introduction)
-Das verschlüsselte Onlineportal steht Ihnen unter folgendem Link via Browser zur Verfügung:
-https://myapostroph.ch/
+## Zugang [](#access)
+Das verschlüsselte Onlineportal steht Ihnen in allen Webbrowsern mit folgendem Link zur Verfügung:
 
-## Registrierung [](#registration)
-Wenn Sie noch keinen myAPOSTROPH Account haben, können Sie sich selber unter oben aufgeführtem Link registrieren. Oder melden Sie sich bei Ihrem persönlichen Project Manager.
+[myapostroph.ch](https://myapostroph.ch/)
 
->Falls Sie Ihr Passwort vergessen haben, können Sie jederzeit über den Login-Bildschirm ein neues anfordern.
+## Benutzersprache [](#user-languages)
 
-## Benutzersprache [](#user-language)
-Die mehrsprachige Benutzeroberfläche steht Ihnen in folgenden Sprachen zur Verfügung:
+Die Benutzeroberfläche steht Ihnen in folgenden Sprachen zur Verfügung:
+
 - Deutsch
 - Englisch
 - Französisch
 
-## User / Superuser [](#user-rights)
-Sie können für Ihre Firma bei myAPOSTROPH als sogenannter
+Diese wird in der eingestellten Kontaktsprache geladen. Sie können diese jederzeit mit dem Dropdown-Menü in der Hauptleiste ändern.
 
-1. **User**: sieht alle selber erfassten Aufträge
-2. **Superuser**: sieht alle Aufträge der ihm zugeteilten User
+![alt Changer la langue via le menu déroulant][user-languages]
 
-registriert sein. Als vertraulich markierte Aufträge (separates Feld in der Auftragserfassung) sieht ausschliesslich der entsprechende Auftraggeber. Der Superuser sieht nur, dass ein Auftrag erfasst wurde, kann aber keine Details dazu einsehen. Damit stellen wir eine zusätzliche Sicherheit für Ihre vertraulichsten Aufträge sicher. Wünschen Sie den Zugriff als Superuser, können wir Ihnen diesen gerne einrichten.
+**Falls Sie die Kontaktsprache ändern möchten, melden Sie sich bei Ihrem persönlichen Project Manager.**
 
-## Auftrag erfassen oder Angebot anfragen [](#inquiries)
-Nutzen Sie bequem die Kachel auf dem Home-Bildschirm für Ihre Eingabe. Über «Auftrag erstellen» gelangen Sie automatisch zu den Detailangaben zu Ihrem Auftrag.
+## Registrierung [](#sign-up)
+Falls Sie noch keinen myAPOSTROPH-Account haben, können Sie sich unter der Startseite registrieren (siehe [Zugang](#access)). Folgen Sie dann den Anweisungen, indem Sie auf **Registrierung** klicken.
+
+**Falls Sie Probleme haben, melden Sie sich bei Ihrem persönlichen Project Manager.**
+
+### Initiales Passwort erstellen [](#initial-pwd)
+
+Nachdem Sie sich erfolgreich registriert haben, müssen Sie sich noch ein Passwort einstellen. Gehen Sie dafür zurück auf die Startseite (siehe [Zugang](#access)) und klicken Sie auf **Passwort vergessen?**. Nachdem Sie den Anweisungen gefolgt sind, bekommen Sie einen Link zugestellt. Damit erstellen Sie Ihr persönliches Passwort.
+
+### Passwort wechseln [](#change-pwd)
+
+Sie können Ihr Passwort jederzeit im Hauptmenu (Siehe [Dashboard](#dashboard)) wechseln, in dem Sie auf **Passwort ändern** klicken.
+
+### Passwort vergessen [](#forgot-pwd)
+
+Falls Sie Ihr Passwort vergessen haben, können Sie jederzeit ein neues anfragen, in dem Sie auf der Startseite (siehe [Zugang](#access)) auf **Passwort vergessen?** klicken.
+
+## Benutzerrechte [](#user-rights)
+
+Auf der myAPOSTROPH-Plattform sind Sie entweder als **User** oder **Superuser** registriert. Die Unterschiede zwischen diesen Benutzerarten ist in folgender Tabelle beschrieben:
+
+| Benutzerart | Beschreibung                                 |       Sichtbarkeit der Aufträge        | Standard Aufträge  | Vertrauliche Aufträge |
+| ----------- | -------------------------------------------- | :------------------------------------: | :----------------: | :-------------------: |
+| User        | Sieht alle selber erfassten Aufträge         |               Nur seine                | Alle Informationen |  Alle Informationen   |
+| Superuser   | Sieht alle Aufträge der ihm zugeteilten User | Von allen Usern die im zugeteleit sind | Alle Informationen |  Nur Auftrags Nummer  |
+
+Bei vertraulichen Aufträgen, die von einem **User** erstellt werden, sieht der **Superuser** nur, dass ein Auftrag erstellt worden ist. Er hat aber keinen Zugriff auf Details. Hiermit stellen wir eine zusätzliche Sicherheit für Ihre vertraulichsten Aufträge sicher. Um mehr über vertrauliche Aufträge zu erfahren, gehen Sie bitte zu [Vertrauliche Aufträge](#confidential-orders).
+
+**Falls Sie einen Superuser-Zugriff wünschen nehmen Sie bitte mit Ihrem persönlichen Project Manager Kontakt auf.**
+
+## Dashboard [](#dashboard)
+
+Das Dashboard erlaubt Ihnen neue Aufträge zu erstellen oder Angebote anzufragen (siehe [Auftrag erfassen oder Angebot anfragen](#orders)). Es stellt auch einen Überblick der letzten Aufträge und deren Fortschritt dar (siehe [Letzte Aufträge](#last-orders)).
+
+Das Navigationsmenü steht Ihnen oben rechts zur Verfügung. Dort sehen Sie die komplette Liste aller Ihrer Aufträge (siehe [Auftragsliste](#orders-list)) sowie das Menü für Machine Translation von myAPOSTROPH.ai (siehe [myAPOSTROPH.ai / Machine Translation](#machine-translation)).
 
 ![alt text][dashboard]
 
-Vor Auftragsabschluss können Sie jederzeit auch zuerst ein Angebot anfordern. Dazu nutzen Sie bitte den Button «Offerte anfordern».
+### Letzte Aufträge [](#last-orders)
 
-Die meistbenutzten Sprachen werden in Ihrem Browser automatisch erkannt und für Ihren Komfort oben angezeigt.
-
->Als «Vertraulich» markierte Aufträge können von einem allfälligen Superuser in Ihrem Unternehmen nicht eingesehen werden.
-
-## Auftrag kopieren [](#copy-order)
-Möchten Sie wiederkehrende Aufträge kopieren und noch schneller Ihre neuste Bestellung aufgeben? Klicken Sie in der Bestellhistorie (Kachel namens «Ihre letzten Aufträge») auf den entsprechenden Auftrag und dann auf den Button «Auftrag kopieren».
-
-![alt text][copy-order]
-
-## Auftragsübersicht [](#orders-overview)
-Behalten Sie den Überblick über Ihre erteilten Aufträge oder prüfen Sie als Superuser die Auftragsvergabe. Klicken Sie über die Kachel namens «Ihre letzten Aufträge» auf «Alle».
+Die Anzeige der letzten Aufträge ermöglicht es Ihnen einen guten Überblick der übermittelten Bestellungen zu halten und deren Fortschritt zu überprüfen. Sie können die Details eines Auftrages anzeigen lassen, in dem Sie auf diesen Klicken. Falls Sie alle Aufträge sehen möchten, klicken Sie auf **Alle**. So öffnen Sie die Liste der Aufträge (siehe [Auftragsliste](#orders-list)).
 
 ![alt text][last-orders]
 
-Blenden Sie hier Filter für Ihre Suche ein und/oder exportieren Sie Ihre Liste bequem als csv-File für eine weitere Bearbeitung in Excel.
+## Auftrag erfassen oder Angebot anfragen [](#orders)
 
-![alt text][filter-orders]
+Sie können auf dem Dashboard einen neuen Auftrag erfassen oder ein Angebot anfragen, in dem Sie auf **Auftrag erstellen** klicken, oder über das Hauptmenu auf **+** klicken.
 
-## Archiv Ausgangsdateien/Zieldateien [](#history)
-Aktuell werden alle Ihre Daten der letzten 5 Jahre automatisch in myAPOSTROPH für Sie gespeichert.
+Vor Auftragsabschluss können Sie jederzeit auch ein Angebot anfordern. Dazu klicken Sie einfach auf **Offerte anfordern**. Ansonsten klicken Sie auf **Auftrag bestellen**, um die Bestellung zu starten.
 
-## myAPOSTROPH a.i./Machine Translation [](#machine-translation)
-Kundinnen und Kunden mit der Version myAPOSTROPH a.i. finden das Menü oben rechts im Bildschirm.
+### Häufige Sprache [](#frequent-languages)
 
-![alt text][mt]
+Die meistbenutzten Ausgangs- und Zielsprachen Ihrer Aufträge und Anfragen werden von Ihrem Browser automatisch erkannt und als erste Auswahl angezeigt. Damit ermöglichen wir Ihnen eine noch schnellere Navigation.
+
+### Vertrauliche Aufträge [](#confidential-orders)
+
+Sie können Aufträge als **vertraulich** kennzeichnen. Vertrauliche Aufträge können **nicht von Ihrem Superuser eingesehen** werden (siehe [Benutzerrechte](#user-rights)).
+
+## Auftragsliste [](#orders-list)
+
+Die Auftragsliste stellt alle Aufträge dar. Über den **Filter** können Sie Anzeigekriterien auswählen (siehe [Filter](#orders-filter)). Das System ermöglicht Ihnen einen Export ins Format CSV. Klicken Sie dazu einfach auf **Liste exportieren**.
+
+**Standardmässig werden alle Mandate der letzten 12 Monate angezeigt.**
+
+### Filter [](#orders-filter)
+
+Mit Filtern können Sie Aufträge leichter finden. Folgende Such-Attribute stehen Ihnen zur Verfügung:
+
+* Auftrags-Nr. oder Titel
+
+* Zielsprachen
+
+* Status
+
+* Bestelltermin
+
+* Liefertermin
+
+  ![alt text][filter-orders]
+
+**Superuser** (siehe [Benutzerrechte](#user-rights)) haben einen zusätzlichen Filter mit dem Sie Aufträge von bestimmten Benutzern sehen können.
+
+**Standardmässig werden nur die Aufträge von sich selbst angezeigt. Um alle Aufträge anzuzeigen, muss dieser Filter gelöscht werden.**
+
+### Details
+
+Sie können die Details einzelner Aufträge anzeigen in dem Sie auf diesen klicken.
+
+## Auftrag kopieren [](#copy-order)
+
+Für wiederkehrende Aufträge steht Ihnen die Funktion zum Kopieren eines Auftrags zur Verfügung. Auf diese Weise können Sie den Eingabevorgang beschleunigen, indem Sie alle Informationen aus Ihrem alten Auftrag kopieren. Öffnen Sie dazu einen sehr ähnlichen Auftrag und klicken Sie auf **Auftrag kopieren**.
+
+![alt text][copy-order]
+
+## myAPOSTROPH.ai / Machine Translation [](#machine-translation)
+
+Kunden, die myAPOSTROPH.ai als Menü aktiviert haben, können über das Hauptmenü darauf zugreifen (siehe [Dashboard](#dashboard)). Sobald die Ausgangs- und Zielsprache ausgewählt wurde, können Sie die Übersetzung starten. Akzeptieren Sie bitte den Hinweis zum Datenschutz.
+
+## Archive Ausgangsdateien / Zieldateien [](#archives)
+
+Derzeit werden alle Ihre Daten der letzten 5 Jahre automatisch in myAPSOTROPH für Sie gespeichert.

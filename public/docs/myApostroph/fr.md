@@ -9,7 +9,7 @@
 ## Accès [](#access)
 Notre portail en ligne sécurisé est à votre disposition dans tous les navigateurs à l'adresse suivante:
 
-[https://myapostroph.ch/](https://myapostroph.ch/fr)
+[myapostroph.ch](https://myapostroph.ch/fr)
 
 ## Langues [](#user-languages)
 

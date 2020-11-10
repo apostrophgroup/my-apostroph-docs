@@ -81,6 +81,32 @@ body {
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
   }
 
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    th {
+      font-weight: 600;
+    }
+
+    th, td {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1;
+    }
+
+    tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+  }
+
   @for $index from 1 through 6 {
     h#{$index}{
       margin-top: 1.5em;
@@ -94,13 +120,13 @@ body {
     }
 
     h#{$index}::before {
-  display: block;
-  content: " ";
-  margin-top: -70px;
-  height: 70px;
-  visibility: hidden;
-  pointer-events: none;
-}
+      display: block;
+      content: " ";
+      margin-top: -70px;
+      height: 70px;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 
 }

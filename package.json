@@ -1,7 +1,7 @@
 {
   "homepage": "https://docs.apostrophgroup.ch/",
   "name": "apostroph-docs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",

@@ -51,6 +51,8 @@ Auf der myAPOSTROPH-Plattform sind Sie entweder als **User** oder **Superuser** 
 | User        | Sieht alle selber erfassten Aufträge         |               Nur seine                | Alle Informationen |  Alle Informationen   |
 | Superuser   | Sieht alle Aufträge der ihm zugeteilten User | Von allen Usern die im zugeteleit sind | Alle Informationen |  Nur Auftrags Nummer  |
 
+
+
 Bei vertraulichen Aufträgen, die von einem **User** erstellt werden, sieht der **Superuser** nur, dass ein Auftrag erstellt worden ist. Er hat aber keinen Zugriff auf Details. Hiermit stellen wir eine zusätzliche Sicherheit für Ihre vertraulichsten Aufträge sicher. Um mehr über vertrauliche Aufträge zu erfahren, gehen Sie bitte zu [Vertrauliche Aufträge](#confidential-orders).
 
 **Falls Sie einen Superuser-Zugriff wünschen nehmen Sie bitte mit Ihrem persönlichen Project Manager Kontakt auf.**

@@ -44,7 +44,7 @@ Si vous avez oublié votre mot de passe, vous pouvez à tout moment en demander 
 
 ## Droits d'utilisateur [](#user-rights)
 
-Sur la plateforme myAPOSTROPH, vous êtes soit un **utilisateur** ou un **super utilisateur**. Les différences entre les types d'utilisateurs est décrite dans le tableau ci-dessous:
+Sur la plateforme myAPOSTROPH, vous êtes soit un **utilisateur** ou un **super utilisateur**. Les différences entre les types d'utilisateurs sont décrites dans le tableau ci-dessous:
 
 | Type d'utilisateur | Description                                                 |               Visibilité des mandats               |      Mandats Standards       |      Mandats confidentiels      |
 | ------------------ | ----------------------------------------------------------- | :------------------------------------------------: | :--------------------------: | :-----------------------------: |
@@ -67,7 +67,7 @@ Un menu est à votre disposition en haut à droite de l'écran. Celui-ci vous pe
 
 ### Derniers mandats [](#last-orders)
 
-aperçu des derniers mandats vous donne une bonne vue d'ensemble des commandes soumises et d'en vérifier la progression. Vous pouvez afficher les détails de chaque mandat en cliquant sur celui-ci. Si vous souhaitez la liste complète des mandats cliquez sur **Tous**, vous accèderez ainsi  à la liste des mandats (voir [Liste des mandats](#orders-list)).
+L'aperçu des derniers mandats vous donne une bonne vue d'ensemble des commandes soumises et d'en vérifier la progression. Vous pouvez afficher les détails de chaque mandat en cliquant sur celui-ci. Si vous souhaitez la liste complète des mandats cliquez sur **Tous**, vous accèderez ainsi  à la liste des mandats (voir [Liste des mandats](#orders-list)).
 
 ![alt text][last-orders]
 
@@ -75,7 +75,7 @@ aperçu des derniers mandats vous donne une bonne vue d'ensemble des commandes s
 
 Vous pouvez saisir un nouveau mandat ou demander une offre via la page d'accueil en cliquant sur **Saisir un mandat**. Vous pouvez également accéder à cette page en cliquant **+** dans le menu à droite.
 
-Avant de finaliser votre demande, vous pouvez bien évidemment demander une offre. Pour ce faire, il vous suffit de cliquer sur **Demander une offre**. Autrement cliquez simplement sur **Commander mandat** pour lancer votre commande.
+Avant de finaliser votre demande, vous pouvez bien évidemment demander une offre. Pour ce faire, il vous suffit de cliquer sur **Demander une offre**. Autrement cliquez simplement sur **Placer mandat** pour lancer votre commande.
 
 ### Langues fréquentes [](#frequent-languages)
 

@@ -138,6 +138,7 @@ const DocsPage = (props: any) => {
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
+          flex-shrink: 0;
         }
         `}
       </style>

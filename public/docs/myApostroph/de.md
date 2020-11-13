@@ -125,7 +125,7 @@ Für wiederkehrende Aufträge steht Ihnen die Funktion zum Kopieren eines Auftra
 
 Kunden, die myAPOSTROPH.ai als Menü aktiviert haben, können über das Hauptmenü darauf zugreifen (siehe [Dashboard](#dashboard)). Sobald die Ausgangs- und Zielsprache ausgewählt wurde, können Sie die Übersetzung starten. Akzeptieren Sie bitte den Hinweis zum Datenschutz.
 
-**Falls Sie Interesse an diese Service haben, nehmen Sie bitte mit Ihrem persönlichen Project Manager Kontakt auf.**
+**Falls Sie Interesse an diesem Service haben, nehmen Sie bitte mit Ihrem persönlichen Project Manager Kontakt auf.**
 
 ## Archive Ausgangsdateien / Zieldateien [](#archives)
 

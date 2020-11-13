@@ -29,7 +29,6 @@ const RootPage = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/">{t('Root.Nav.Home')}</Nav.Link>
             <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Root.Nav.MyApostroph')}</Nav.Link>
           </Nav>
           <NavDropdown id="language-selector" title={t('Root.Nav.Language')} className="language-selector">

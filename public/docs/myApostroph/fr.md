@@ -19,20 +19,20 @@ L'interface myAPOSTROPH est à votre disposition dans les langues suivantes:
 - Anglais
 - Français
 
-Celle-ci est chargée dans votre langue de contact. Vous pouvez à tout moment changer la langue via le menu déroulant dans la barre principale.
+Celle-ci est définie par votre langue de contact. Vous pouvez à tout moment changer la langue via le menu déroulant dans la barre principale.
 
 ![alt Changer la langue via le menu déroulant][user-languages]
 
 **Si vous souhaitez changer votre langue de contact n'hésitez pas à en faire la demande à votre gestionnaire de projet.**
 
 ## Inscription [](#sign-up)
-Si vous ne disposez pas encore d'un compte utilisateur myAPOSTROPH, enregistrez-vous via la page accueil (voir [Accès](#access)). Suivez ensuite les instructions en cliquant sur **Inscription**.
+Si vous ne disposez pas encore d'un compte utilisateur myAPOSTROPH, enregistrez-vous via la page d'accueil (voir [Accès](#access)). Suivez ensuite les instructions en cliquant sur **Inscription**.
 
 **Si vous rencontrez des problèmes n'hésitez pas à contacter votre gestionnaire de projet.**
 
 ### Création du mot de passe initial [](#initial-pwd)
 
-Une fois votre inscription effectuée avec succès il vous faudra encore créer votre mot de passe. Pour ce faire, retournez sur la page accueil (voir [Accès](#access)), cliquez sur **Mot de passe oublié?** et suivez les instructions. Vous recevrez un lien vous permettant de configurer votre mot de passe.
+Une fois votre inscription effectuée avec succès il vous faudra encore créer votre mot de passe. Pour ce faire, retournez sur la page d'accueil (voir [Accès](#access)), cliquez sur **Mot de passe oublié?** et suivez les instructions. Vous recevrez un lien vous permettant de configurer votre mot de passe.
 
 ### Changer de mot de passe [](#change-pwd)
 
@@ -46,20 +46,20 @@ Si vous avez oublié votre mot de passe, vous pouvez à tout moment en demander 
 
 Sur la plateforme myAPOSTROPH, vous êtes soit un **utilisateur** ou un **super utilisateur**. Les différences entre les types d'utilisateurs sont décrites dans le tableau ci-dessous:
 
-| Type d'utilisateur | Description                                                 |               Visibilité des mandats               |      Mandats Standards       |      Mandats confidentiels      |
-| ------------------ | ----------------------------------------------------------- | :------------------------------------------------: | :--------------------------: | :-----------------------------: |
-| Utilisateur        | Ne voit que les mandats qu'il a saisi                       |                Les siens uniquement                | Voit toutes les informations |  Voit toutes les informations   |
-| Super utilisateur  | Voit les mandats de tous les utilisateurs de l'organisation | Ceux de tous les utilisateurs qui dépendent de lui | Voit toutes les informations | Voit uniquement le n° de mandat |
+| Type d'utilisateur | Description                                                  |               Visibilité des mandats               |      Mandats standards       |      Mandats confidentiels      |
+| ------------------ | ------------------------------------------------------------ | :------------------------------------------------: | :--------------------------: | :-----------------------------: |
+| Utilisateur        | Ne voit que les mandats qu'il a saisi                        |                Les siens uniquement                | Voit toutes les informations |  Voit toutes les informations   |
+| Super utilisateur  | Voit les mandats de tous les utilisateurs qui dépendent de lui | Ceux de tous les utilisateurs qui dépendent de lui | Voit toutes les informations | Voit uniquement le n° de mandat |
 
 
 
-Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super utilisateur** voit uniquement qu'un mandat a été créé, mais n'a pas accès au détail. Nous garantissons ainsi une sécurité supplémentaire pour les mandats confidentiels. Pour en savoir plus sur les mandats confidentiels, aller à la section [Mandats confidentiels](#confidential-orders).
+Dans le cas d'un mandat confidentiel crée par un **utilisateur**, le **super utilisateur** voit uniquement qu'un mandat a été créé, mais n'a pas accès au détail. Nous garantissons ainsi une sécurité supplémentaire pour les mandats confidentiels. Pour en savoir plus sur les mandats confidentiels, allez à la section [Mandats confidentiels](#confidential-orders).
 
 **Si vous souhaitez disposer d'un accès super utilisateur, contactez votre gestionnaire de projet.**
 
 ## Vue d'ensemble [](#dashboard)
 
-La page d'accueil vous permet de saisir de nouveaux mandats ou de demander des offres (voir [Saisie de mandat ou demande d'offre](#orders)). Elle vous offre aussi la possibilité de voir vos derniers mandats et leur progression (voir [Dernières mandats](#last-orders)).
+La page d'accueil vous permet de saisir de nouveaux mandats ou de demander des offres (voir [Saisie de mandat ou demande d'offre](#orders)). Elle vous offre aussi la possibilité de voir vos derniers mandats et leur progression (voir [Derniers mandats](#last-orders)).
 
 Un menu est à votre disposition en haut à droite de l'écran. Celui-ci vous permet d'accéder à la liste de vos mandats (voir [Liste des mandats](#orders-list)) ainsi qu'au module de traduction automatique myAPOSTROPH.ai (voir [myAPOSTROPH.ai / Traduction automatique](#machine-translation)).
 
@@ -87,17 +87,17 @@ Il est possible de marquer votre mandat comme **Confidentiel**. Un mandat confid
 
 ## Liste des mandats [](#orders-list)
 
-La liste des mandats affiche tous les mandats. En cliquant sur **Filtre** vous pouvez choisir des critères d'affichages (voir [Filtres](#orders-filter)). Il est possible d'exporter la liste sous format CSV en cliquant **Exporter**.
+La liste des mandats affiche tous les mandats. En cliquant sur **Filtre** vous pouvez choisir des critères d'affichage (voir [Filtres](#orders-filter)). Il est possible d'exporter la liste au format CSV en cliquant **Exporter**.
 
 **Par défaut tous les mandats des 12 derniers mois sont affichés.**
 
 ### Filtres [](#orders-filter)
 
-Les filtres vous permettent de retrouver des mandats plus facilement.  Il est possible de filtrer selon les attributs suivants:
+Les filtres vous permettent de retrouver des mandats plus facilement.  Il est possible de filtrer selon les critères suivants:
 
-* N° de mandat ou titre du projet
+* N° ou titre du projet
 
-* Langues cibles
+* Langues cible
 
 * Statut
 
@@ -107,7 +107,9 @@ Les filtres vous permettent de retrouver des mandats plus facilement.  Il est po
 
   ![alt text][filter-orders]
 
-Les **super utilisateurs** (voir [Droits d'utilisateur](#user-rights)) ont un filtre supplémentaire permettant de filtrer par utilisateur. **Par défaut seuls les mandats du super utilisateur sont affichés. Pour afficher les mandats de tous les utilisateurs il suffit de supprimer ce filtre.**
+Les **super utilisateurs** (voir [Droits d'utilisateur](#user-rights)) ont un filtre supplémentaire permettant de filtrer par utilisateur.
+
+**Par défaut seuls les mandats du super utilisateur sont affichés. Pour afficher les mandats de tous les utilisateurs il suffit de supprimer ce filtre.**
 
 ### Details
 
@@ -122,7 +124,7 @@ Pour les mandats récurrents, vous pouvez utiliser la fonction copier un mandat.
 
 Les clientes et clients ayant activé le module myAPOSTROPH.ai peuvent accéder à celui-ci via le menu principal (voir [Vue d'ensemble](#dashboard)). Une fois les langues source et cible choisies vous pourrez commencer la traduction.
 
-**Vous pouvez contacter votre chargé de projets si ce service vous intéresse.**
+**Vous pouvez contacter votre gestionnaire de projets si ce service vous intéresse.**
 
 ## Archive fichiers source / fichiers cible [](#archives)
 

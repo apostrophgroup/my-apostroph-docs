@@ -7,7 +7,7 @@
 # myAPOSTROPH
 
 ## Accès [](#access)
-Notre portail en ligne sécurisé est à votre disposition dans tous les navigateurs à l'adresse suivante:
+Notre portail en ligne sécurisé est à votre disposition dans tous les navigateurs modernes (Edge, Chrome, Firefox) à l'adresse suivante:
 
 [myapostroph.ch](https://myapostroph.ch/fr)
 

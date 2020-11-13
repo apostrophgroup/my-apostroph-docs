@@ -7,7 +7,7 @@
 # myAPOSTROPH
 
 ## Zugang [](#access)
-Das verschlüsselte Onlineportal steht Ihnen in allen Webbrowsern mit folgendem Link zur Verfügung:
+Das verschlüsselte Onlineportal steht Ihnen in allen modernen Webbrowsern (Edge, Chrome, Firefox) mit folgendem Link zur Verfügung:
 
 [myapostroph.ch](https://myapostroph.ch/)
 

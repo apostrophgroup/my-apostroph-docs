@@ -75,7 +75,7 @@ L'aperçu des derniers mandats vous donne une bonne vue d'ensemble des commandes
 
 Vous pouvez saisir un nouveau mandat ou demander une offre via la page d'accueil en cliquant sur **Saisir un mandat**. Vous pouvez également accéder à cette page en cliquant **+** dans le menu à droite.
 
-Avant de finaliser votre demande, vous pouvez bien évidemment demander une offre. Pour ce faire, il vous suffit de cliquer sur **Demander une offre**. Autrement cliquez simplement sur **Placer mandat** pour lancer votre commande.
+Avant de finaliser votre demande, vous pouvez bien évidemment demander une offre. Pour ce faire, il vous suffit de cliquer sur **Demander un devis**. Autrement cliquez simplement sur **Lancer le mandat** pour lancer votre commande.
 
 ### Langues fréquentes [](#frequent-languages)
 

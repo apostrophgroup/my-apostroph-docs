@@ -44,12 +44,12 @@ Falls Sie Ihr Passwort vergessen haben, können Sie jederzeit ein neues anfragen
 
 ## Benutzerrechte [](#user-rights)
 
-Auf der myAPOSTROPH-Plattform sind Sie entweder als **User** oder **Superuser** registriert. Die Unterschiede zwischen diesen Benutzerarten ist in folgender Tabelle beschrieben:
+Auf der myAPOSTROPH-Plattform sind Sie entweder als **User** oder **Superuser** registriert. Der Unterschied zwischen diesen Benutzerarten ist in folgender Tabelle beschrieben:
 
 | Benutzerart | Beschreibung                                 |       Sichtbarkeit der Aufträge        | Standard Aufträge  | Vertrauliche Aufträge |
 | ----------- | -------------------------------------------- | :------------------------------------: | :----------------: | :-------------------: |
 | User        | Sieht alle selber erfassten Aufträge         |               Nur seine                | Alle Informationen |  Alle Informationen   |
-| Superuser   | Sieht alle Aufträge der ihm zugeteilten User | Von allen Usern die im zugeteleit sind | Alle Informationen |  Nur Auftrags Nummer  |
+| Superuser   | Sieht alle Aufträge der ihm zugeteilten User | Von allen Usern die ihm zugeteleit sind | Alle Informationen |  Nur Auftrags Nummer  |
 
 
 

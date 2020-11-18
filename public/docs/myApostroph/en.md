@@ -66,7 +66,7 @@ The Navigation menu is available to you at the top right. Here you can see a com
 
 ### Recent jobs [](#last-orders)
 
-The display of recent jobs makes it possible for you to maintain a good overview of the jobs placed and their progress. To display the details of an job all you need to do is click on it. If you would like to see all jobs, click **All**. This is how to open the list of jobs (see [List of jobs](#orders-list)).
+The display of recent jobs makes it possible for you to maintain a good overview of the jobs placed and their progress. To display the details of a job all you need to do is click on it. If you would like to see all jobs, click **All**. This is how to open the list of jobs (see [List of jobs](#orders-list)).
 
 ![alt text][last-orders]
 

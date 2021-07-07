@@ -1,7 +1,7 @@
 {
   "Root.Nav.Home": "Home",
   "Root.Nav.MyApostroph": "myAPOSTROPH",
-  "Root.Nav.MyFreelance": "myFREELANCE",
+  "Root.Nav.ApoConnectors": "apoCONNECTORS",
   "Root.Nav.Language": "Language",
   "Root.Nav.Language.One": "Deutsch",
   "Root.Nav.Language.One.Value": "de",
@@ -18,9 +18,9 @@
   "Home.CardOne.Text": "Simple, fast and secure: place and manage your orders on our encrypted online portal for free.",
   "Home.CardOne.Link": "Go to documentation",
 
-  "Home.CardTwo.Title": "myFREELANCE",
-  "Home.CardTwo.Subtitle": "Our online portal",
-  "Home.CardTwo.Text": "Our portal allows you to manage your translations in real time. Order translations & request offers, all with just a few clicks!",
+  "Home.CardTwo.Title": "apoCONNECTORS",
+  "Home.CardTwo.Subtitle": "Our CMS connections",
+  "Home.CardTwo.Text": "Send us translations directly from your CMS system and import the translated pages automatically! ",
   "Home.CardTwo.Link": "Go to documentation",
 
   "Error.Title": "Oops, something went wrong...",

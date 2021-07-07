@@ -1,7 +1,7 @@
 {
   "Root.Nav.Home": "Home",
   "Root.Nav.MyApostroph": "myAPOSTROPH",
-  "Root.Nav.MyFreelance": "myFREELANCE",
+  "Root.Nav.ApoConnectors": "apoCONNECTORS",
   "Root.Nav.Language": "Sprache",
   "Root.Nav.Language.One": "Français",
   "Root.Nav.Language.One.Value": "fr",
@@ -18,9 +18,9 @@
   "Home.CardOne.Text": "Einfach, schnell und sicher: Bestellen und verwalten Sie Ihre Aufträge auf unserer kostenlosen und verschlüsselten Online-Plattform.",
   "Home.CardOne.Link": "Zur Dokumentation",
 
-  "Home.CardTwo.Title": "myFREELANCE",
-  "Home.CardTwo.Subtitle": "Unser Online-Portal",
-  "Home.CardTwo.Text": "Über unser Portal können Sie Ihre Übersetzungen in Echtzeit verwalten. Bestellen Sie Übersetzungen und fordern Sie Angebote mit nur wenigen Klicks an!",
+  "Home.CardTwo.Title": "apoCONNECTORS",
+  "Home.CardTwo.Subtitle": "Unsere CMS anbindungen",
+  "Home.CardTwo.Text": "Senden Sie uns übersetzungen direkt von ihrem CMS System und importieren Sie die übersetzte Seiten automatisch!",
   "Home.CardTwo.Link": "Zur Dokumentation",
 
   "Error.Title": "Ups! Irgendwas lief schief...",

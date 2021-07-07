@@ -30,6 +30,7 @@ const RootPage = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link as={Link} to={'/docs/myApostroph'}>{t('Root.Nav.MyApostroph')}</Nav.Link>
+            <Nav.Link as={Link} to={'/docs/apoConnectors/drupal'}>{t('Root.Nav.ApoConnectors')}</Nav.Link>
           </Nav>
           <NavDropdown id="language-selector" title={t('Root.Nav.Language')} className="language-selector">
             <NavDropdown.Item key="language-selector-one"
@@ -46,7 +47,7 @@ const RootPage = () => {
       <div className="main">
         <Switch>
           <Route exact path="/" component={ HomePage }/>
-          <Route exact path="/docs/:docId" component={ DocsPage }/>
+          <Route exact path="/docs/:docId+" component={ DocsPage }/>
           <Route exact path="/error" component={ ErrorPage }/>
           <Route component={ ErrorPage }/>
         </Switch>

@@ -1,7 +1,7 @@
 {
   "Root.Nav.Home": "Home",
   "Root.Nav.MyApostroph": "myAPOSTROPH",
-  "Root.Nav.MyFreelance": "myFREELANCE",
+  "Root.Nav.ApoConnectors": "apoCONNECTORS",
   "Root.Nav.Language": "Langue",
   "Root.Nav.Language.One": "Deutsch",
   "Root.Nav.Language.One.Value": "de",
@@ -18,9 +18,9 @@
   "Home.CardOne.Text": "Simple, rapide et sûr: commandez et gérez vos demandes sur notre portail en ligne gratuite et cryptée.",
   "Home.CardOne.Link": "Aller à la documentation",
 
-  "Home.CardTwo.Title": "myFREELANCE",
-  "Home.CardTwo.Subtitle": "Notre portail en ligne",
-  "Home.CardTwo.Text": "Notre portail vous permet de gérer vos traductions en temps réel. Commandez des traductions et demandez des offres, le tout en quelques clics!",
+  "Home.CardTwo.Title": "apoCONNECTORS",
+  "Home.CardTwo.Subtitle": "Nos connecteurs pour CMS",
+  "Home.CardTwo.Text": "Envoyez-nous des traductions directement depuis votre système CMS et importez les pages traduites automatiquement!",
   "Home.CardTwo.Link": "Aller à la documentation",
 
   "Error.Title": "Oups, une erreur s'est produite ...",
